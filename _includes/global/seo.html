@@ -1,0 +1,50 @@
+
+<!-- SeoTags  -->
+
+<title>{{ page.title }} - {{site.title}}</title>
+<meta property="og:title" content="{% if page.title %}{{ page.title | escape }} | {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %} {{ site.description | strip_html }} {% endif %}"/>
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %} {{ site.description | strip_html }} {% endif %}"/>
+<link rel="canonical" href="{{site.url}}{{page.url}}" />
+<meta property="og:url" content="{{site.url}}{{page.url}}" />
+<meta property="og:site_name" content="{{site.title}}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="600" />
+{% if page.social-media-image %}
+    <meta property="og:image" content="{{ site.url }}{{ page.social-media-image }}" />
+{% elsif page.image %}
+    <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+{% elsif page.images %}
+    <meta property="og:image" content="{{ site.url }}{{ page.images | first }}" />
+{% elsif page.product-images %}
+    <meta property="og:image" content="{{ site.url }}{{ page.product-images | first }}" />
+ {% else %}
+    <meta property="og:image" content="{{ site.url }}{{ site.social-media-image }}" />
+ {% endif %}
+<meta property="og:type" content="website" />
+<meta property="article:published_time" content="{{ page.date }}" />
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@A_T_I_lab" />
+<meta name="twitter:creator" content="@A_T_I_lab" />
+<meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }} | {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 120}}{% else %} {{ site.description | strip_html | truncate: 120}} {% endif %}">
+{% if page.image %}
+      <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+ {% else %}
+      <meta name="twitter:image" content="{{ site.url }}{{ site.social-media-image }}">
+ {% endif %}
+
+
+<script type="application/ld+json">
+
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "{{ page.title }}",
+"image": "{{ site.url }}{{ page.image }}",
+"datePublished": "{{ page.date }}",
+"description": "{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %} {{ site.description | strip_html }} {% endif %}",
+"url": "{{site.url}}{{page.url}}"}
+
+</script>

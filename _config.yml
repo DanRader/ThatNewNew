@@ -1,13 +1,20 @@
 ---
-title: That New New
-timezone: UTC
+title: Dan Rader Portfolio
+timezone: America/New_York
 collections:
   posts:
     title: Posts
     output: true
-  uploads:
-    title: Uploads
-    output: true
-  work:
-    title: Work
-    output: true
+defaults:
+logo: "/includes/svg/ATI_b.svg"
+gems:
+- jekyll-sitemap
+email: howdy@danrdesign.com
+description: Dan Rader is a ui/ux designer and art director based in Washingtington DC specializing in web, app, and product design.
+url:
+twitter_username: A_T_I_lab
+github_username: DanRader
+permalink: pretty
+footer-language: Sign up to hear the latest adventures of the ATI team and keep up
+  to date with sightings.
+social-media-image: "/uploads/og-image.jpg"
