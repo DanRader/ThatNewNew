@@ -5,13 +5,16 @@ collections:
   posts:
     title: Posts
     output: true
-defaults:
+  uploads:
+    title: Uploads
+    output: true
 logo: "/includes/svg/ATI_b.svg"
 gems:
 - jekyll-sitemap
 email: howdy@danrdesign.com
-description: Dan Rader is a ui/ux designer and art director based in Washingtington DC specializing in web, app, and product design.
-url:
+description: Dan Rader is a ui/ux designer and art director based in Washingtington
+  DC specializing in web, app, and product design.
+url: 
 twitter_username: A_T_I_lab
 github_username: DanRader
 permalink: pretty
