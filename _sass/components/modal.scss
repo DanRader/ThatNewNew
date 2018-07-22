@@ -1,0 +1,255 @@
+/* The Modal (background) */
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.6);
+    overflow-y: scroll;
+}
+
+.contact--modal__active {
+    display: block;
+    animation: fade-in .1s ease-out;
+
+    & .modal-content {
+        animation: whammy .2s ease-out;
+
+        @media #{$media-max-tablet}{
+            animation: whammy-rev .2s ease-out;
+        }
+    }
+
+    & .content-wrap {
+        animation: fade-in-down .4s ease-out;
+        max-width: 32rem;
+
+        @media #{$media-max-tablet}{
+            margin-top: 2rem;
+        }
+    }
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    padding: 5%;
+    position: relative;
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: $cch-blue;
+
+    @media #{$media-max-tablet}{
+        height: 70vh;
+        margin-top: 30vh;
+    }
+
+    & h1 {
+        font-size: 46px;
+        letter-spacing: -1px;
+        margin-bottom: .5rem;
+
+        @media #{$media-max-tablet}{
+            font-size: 26px;
+        }
+    }
+    & p {
+        line-height: 22px;
+    }
+
+    & .color-bar {
+        background-color: $cch-blue;
+        height: 8px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @media #{$media-max-tablet}{
+            height: 6px;
+        }
+    }
+
+    & svg {
+        width: 6rem;
+        margin-bottom: 1rem;
+         @media #{$media-max-tablet}{
+             width: 4rem;
+         }
+    }
+
+}
+
+
+#myForm {
+    margin-top: 2rem;
+    text-align: center;
+
+    @media #{$media-max-tablet}{
+        margin-top: 1rem;
+    }
+
+    & input, & textarea {
+        width: 100%;
+        height: 44px;
+        margin-bottom: 16px;
+        border: 1px solid #949494;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 15px;
+        padding-left: 16px;
+        box-sizing: border-box;
+        background-color: transparent;
+        color: black;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    & textarea {
+        height: 120px;
+        padding-top: 16px;
+    }
+
+    & #Form-submit {
+        width: inherit;
+        margin-bottom: 0;
+        font-size: 12px;
+        margin-top: .5rem;
+        background-color: black;
+        color: white;
+    }
+}
+
+
+.close {
+  position: absolute;
+  z-index: 1;
+  top: 6%;
+  right: 4%;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  animation: fade-in-down .45s ease-out;
+  transition: $transition-2;
+  cursor: pointer;
+  cursor: grab;
+  cursor: -webkit-grab;
+
+      @media #{$media-max-tablet}{
+          width: 25px;
+          height: 25px;
+      }
+
+     &:focus {
+         cursor: pointer;
+         cursor: grabbing;
+         cursor: -webkit-grabbing;
+      }
+
+      &:hover {
+          transform: scale3d(1.3, 1.3, 1);
+          &::before, &::after {
+            color: #4a4a4a;
+        }
+      }
+
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        margin-top: -1px;
+        background: #000;
+        transition: $transition-2;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+        transition: $transition-2;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+        transition: $transition-2;
+      }
+}
+
+@keyframes fade-in {
+    0% {
+        background-color: rgba(0,0,0,0);
+    }
+    100% {
+        background-color: rgba(0,0,0,0.6);
+    }
+
+}
+
+@keyframes whammy {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes whammy-rev {
+    0% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-down {
+    0% {
+        transform: translateY(-3rem);
+        opacity: 0;
+    }
+    30% {
+        transform: translateY(-3rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.alert {
+    margin-top: 1rem;
+}
+
+#return--modal {
+    & .modal-content {
+        display: block;
+        & h1 {
+            padding: 4rem 0 1rem 0;
+        }
+    @media #{$media-max-tablet}{
+        height: auto;
+        margin-top: 0;
+    }
+
+    }
+}

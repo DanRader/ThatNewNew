@@ -1,0 +1,113 @@
+.product-filter {
+    margin-bottom: 2rem;
+}
+
+.color-filter {
+    color: transparent;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: 2.5px solid rgba(255, 255, 255, 0.8);
+    transition: all .3s;
+    margin: 5px;
+    opacity: .8;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.filter_list {
+    margin: 1rem 2rem 0 0;
+
+    & button {
+        background-color: inherit;
+        box-sizing: inherit;
+        padding: none;
+        border: none;
+        display: block;
+        font-size: 13px;
+        font-family: inherit;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: .5rem;
+        position: relative;
+        z-index: 1;
+        text-align: left;
+
+        &:hover {
+            &:before {
+                transform: scaleX(1);
+            }
+        }
+
+        &:before  {
+            content: "";
+            width: 87%;
+            height: 4px;
+            background-color: #BCD422;
+            position: absolute;
+            bottom: 8px;
+            left: 4px;
+            margin: auto;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: $transition-1;
+            opacity: .7;
+            z-index: -1;
+        }
+
+        &:focus {
+            outline: none;
+            }
+        }
+        > .mixitup-control-active {
+            &:after {
+                content: "";
+                width: 87%;
+                height: 4px;
+                background-color: #BCD422;
+                position: absolute;
+                bottom: 8px;
+                left: 4px;
+                margin: auto;
+                transform-origin: left;
+                transition: $transition-1;
+                opacity: .7;
+                z-index: -1;
+            }
+        }
+}
+
+.color-filter_list {
+    margin-left: 0;
+    margin-right: 2rem;
+
+    > .mixitup-control-active {
+        transform: scale(1.1);
+        border: 2px solid rgba(255, 255, 255, 0.7);
+        opacity: 1;
+        animation: color-filter-anim .6s ease-in-out;
+    }
+}
+
+.filter-btn {
+    margin: 7px 30px 0 45px;
+}
+
+@keyframes color-filter-anim {
+    0% {
+        transform: scale(1.2);
+        border: 2.5px solid rgba(255, 255, 255, 0.8);
+        opacity: .8;
+    }
+    100% {
+        transform: scale(1.1);
+        border: 2px solid rgba(255, 255, 255, 0.7);
+        opacity: 1;
+    }
+}

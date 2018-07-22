@@ -1,0 +1,25 @@
+$tablet: 40em;
+$tabletplus: 41em;
+$xl: 1400px;
+$l: 52em;
+
+$media-max-tablet: "screen and (max-width: #{$tablet})";
+$media-max-l: "screen and (max-width: #{$l})";
+$media-min-xl: "screen and (min-width: #{$xl})";
+$media-min-tablet: "screen and (min-width: #{$tablet})";
+// @media #{$media-max-tablet}{}
+// @media #{$media-max-l}{}
+// @media #{$media-min-xl}{}
+// @media #{$media-min-tablet}{}
+
+.hide-below-tablet {
+    @media #{$media-max-tablet}{
+        display: none;
+    }
+}
+
+.hide-above-tablet {
+     @media #{$media-min-tablet}{
+         display: none;
+     }
+}

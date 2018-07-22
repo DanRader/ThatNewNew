@@ -1,0 +1,28 @@
+{
+  "name": "cch",
+  "version": "1.0.0",
+  "description": "gulp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoonlightBureau/CCH.git"
+  },
+  "author": "Dan Rader",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoonlightBureau/CCH/issues"
+  },
+  "homepage": "https://github.com/MoonlightBureau/CCH#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.6.5"
+  },
+  "dependencies": {
+    "browser-sync": "^2.23.6",
+    "flickity": "^2.1.1",
+    "gulp-jslint": "^1.0.10"
+  }
+}
