@@ -1,7 +1,9 @@
 ---
+title: Irc
 layout: work-item
 content1:
-  image:
-  text:
+  image: 
+  text: 
   is-left: false
 ---
+
