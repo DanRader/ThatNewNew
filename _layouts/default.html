@@ -3,13 +3,14 @@
 
   {% include global/head.html %}
 
-  <body>
+  <body class="home">
 
     {% include global/nav.html %}
 
-    {{ content }}
-
-    {% include global/footer.html %}
+    <div class="body-wrap">
+            {{ content }}
+    </div>
+    <!-- <script src="/assets/js/basicScroll.min.js"></script> -->
+    <script src="/assets/js/app.js"></script>
   </body>
-
 </html>

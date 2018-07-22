@@ -1,0 +1,78 @@
+/* On the flex container */
+.cider-rows {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    margin-left: 12.5%;
+    margin-top: 2rem;
+
+    & .cider-item {
+        margin-right: 1.4rem;
+        width: 6.4rem;
+        @media #{$media-max-tablet}{
+            margin-right: 0.6rem;
+            width: 5.4rem;
+        }
+
+        & h5 {
+            font-size: 18px;
+            margin-bottom: 6px;
+            margin-top: 22px;
+        }
+
+        & p {
+            margin-left: 0;
+            line-height: 1;
+            font-size: 15px;
+        }
+    }
+
+    @media #{$media-max-tablet}{
+            margin: 0;
+    }
+}
+
+
+
+
+.cideries-twohundred {
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    width: 166px;
+}
+
+.cideries-twohundred-mobile {
+    position: absolute;
+    left: -6rem;
+    bottom: 6.8rem;
+    width: 296px;
+    @media #{$media-max-tablet}{
+        bottom: 5.6rem;
+    }
+}
+
+.cideries-horsey-bg {
+    width: 530px;
+    bottom: -9rem;
+    right: -9rem;
+    position: absolute;
+    z-index: -1;
+
+    @media #{$media-max-tablet}{
+        top: auto;
+        bottom: -2rem;
+    }
+}
+.cideries-horsey-horse {
+    width: 530px;
+    bottom: -7rem;
+    right: -9rem;
+    position: absolute;
+    z-index: -1;
+
+    @media #{$media-max-tablet}{
+        top: auto;
+        bottom: -2rem;
+    }
+}
