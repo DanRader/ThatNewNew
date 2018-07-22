@@ -8,28 +8,14 @@ collections:
   uploads:
     title: Uploads
     output: true
-<<<<<<< HEAD
-logo: "/includes/svg/ATI_b.svg"
-gems:
-- jekyll-sitemap
-email: howdy@danrdesign.com
-description: Dan Rader is a ui/ux designer and art director based in Washingtington
-  DC specializing in web, app, and product design.
-url: 
-twitter_username: A_T_I_lab
-github_username: DanRader
-=======
   work:
     title: Work
     output: true
 email: howdy@danrdesign.com
-description: Capitol Cider House is cidery and taproom located at 3930 Georgia Avenue,
-  steps from the metro in the heart of D.C.’s Petworth neighborhood. We focus on creating
-  and curating craft hard cider with modern flavors.
+description: replace me
 url: https://capitolciderhouse.com
->>>>>>> video
 permalink: pretty
-social-media-image: "/uploads/cch_OG.png"
+social-media-image: ""
 exclude:
 - node_modules
 - gulpfile.js
