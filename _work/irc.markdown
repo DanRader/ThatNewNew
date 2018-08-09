@@ -1,4 +1,5 @@
 ---
+title: Irc
 layout: work-item
 title: Settle In
 sub-title: Rethinking Resettlement.
@@ -13,7 +14,6 @@ collaborators:
     - Paul Best // UX Design
     - Samya Bahari // Product Management
 prime-color: "#BADBC9"
-
 ---
 
 {% include components/two-up-img.html

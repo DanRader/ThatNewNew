@@ -15,7 +15,7 @@ email: howdy@danrdesign.com
 description: replace me
 url: https://capitolciderhouse.com
 permalink: pretty
-social-media-image: ""
+social-media-image: ''
 exclude:
 - node_modules
 - gulpfile.js
