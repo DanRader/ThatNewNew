@@ -1,18 +1,17 @@
 ---
-title: Irc
-layout: work-item
 title: Settle In
+layout: work-item
 sub-title: Rethinking Resettlement.
-desc: "**Resettling in America is an uphill battle.**
-Sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+desc: "**Resettling in America is an uphill battle.** Sadipscing elitr, sed diam nonumy
+  eirmod tempor invidunt ut labore"
 hero-image: "/uploads/ios-banner.jpg"
 client: IRC—International Rescue Commitee
 role: Design, Art Direction, Development
 collaborators:
-    - Created at [ISL](https://isl.co/)
-    - Fernando Castro // Creative Director
-    - Paul Best // UX Design
-    - Samya Bahari // Product Management
+- Created at [ISL](https://isl.co/)
+- Fernando Castro // Creative Director
+- Paul Best // UX Design
+- Samya Bahari // Product Management
 prime-color: "#BADBC9"
 ---
 
