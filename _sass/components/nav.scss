@@ -1,14 +1,23 @@
 .nav-wrapper {
-    position: fixed;
+    position: absolute;
     width: 100%;
-    top: 0;
     left: 0;
     z-index: 9999999;
+    height: 188px;
+    @media #{$media-max-s}{
+             height: 110px;
+    }
+}
+
+.grid .nav-inside-wrapper {
+    grid-column: 2 / 12;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 nav {
-      height: 7.5rem;
-      margin: 0 4%;
+    margin: 144px 144px 0;
 
       & li {
           color: white;
@@ -20,7 +29,7 @@ nav {
           }
       }
 
-       @media #{$media-max-tablet}{
+       @media #{$media-max-s}{
            height: 5rem;
            margin: 0 6%;
 
@@ -31,9 +40,9 @@ nav {
 }
 
 .brand-logo  {
-    width: 3rem;
-     @media #{$media-max-tablet}{
-         width: 2.5rem;
+    width: 2rem;
+     @media #{$media-max-s}{
+         width: 2rem;
          height: 50px;
      }
 }
@@ -118,7 +127,7 @@ nav {
   transition: $transition-1;
   color: black;
   &:hover {
-    color: $cch-blue;
+    color: blue;
   }
 }
 
@@ -129,7 +138,7 @@ nav {
         height: 100%;
         width: 441px;
         z-index: -1;
-        background: $cch-blue url(/uploads/menu-texture.png) bottom no-repeat;
+        background: blue url(/uploads/menu-texture.png) bottom no-repeat;
         background-size: contain;
         transform: translateX(100%);
         transition: $transition-1;
@@ -142,36 +151,60 @@ nav {
             margin-left: 0;
         }
 
-        @media #{$media-max-tablet}{
+        @media #{$media-max-s}{
             width: 100%;
             padding: 2rem 3rem 3rem;
         }
     }
 
     .nav-open {
-        width: 48px;
+        width: 40px;
         height: 48px;
         cursor: pointer;
         z-index: 999999;
         border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
 
-        @media #{$media-max-tablet}{
+        &:hover {
+            & i {
+                background: black;
+                &:nth-child(1) {
+                    transform: scaleX(1.1);
+                }
+                &:nth-child(2) {
+                    transform: scaleX(1.2);
+                }
+                &:nth-child(3) {
+                    transform: scaleX(1.35);
+                }
+            }
+        }
+
+        @media #{$media-max-s}{
             height: 52px;
         }
 
         & i {
             display: block;
-            width: 44px;
-            height: 6px;
-            background: $cch-blue;
+            width: 100%;
+            height: 2px;
+            background: $dark-grey;
             border-radius: 0;
-            // margin-left: 14px;
+            margin-top: 8px;
+            transition: .3s all;
+            transform-origin: right;
+            will-change: transform;
 
             &:nth-child(1) {
-                margin-top: 16px;
+
             }
             &:nth-child(2) {
-                margin-top: 9px;
+                width: 90%;
+            }
+            &:nth-child(3) {
+                width: 80%;
             }
         }
     }
@@ -227,7 +260,7 @@ form {
         font-size: 14px;
         font-weight: 200;
 
-        @media #{$media-max-tablet}{
+        @media #{$media-max-s}{
             height: 60px;
             font-size: 17px;
         }
@@ -240,12 +273,12 @@ form {
         position: absolute;
         top: 0;
         right: 0;
-        background-color: $cch-red;
+        background-color: red;
         border: none;
         background-image: url(/uploads/right-arrow.svg);
         background-position: center;
         background-repeat: no-repeat;
-        @media #{$media-max-tablet}{
+        @media #{$media-max-s}{
             width: 60px;
             height: 60px;
         }
@@ -260,7 +293,7 @@ p.sign-up {
     color: white;
     font-weight: 600;
     margin-bottom: 1.2rem;
-    @media #{$media-max-tablet}{
+    @media #{$media-max-s}{
         font-size: 16px;
         letter-spacing: 3px;
     }

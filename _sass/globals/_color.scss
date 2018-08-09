@@ -1,31 +1,31 @@
-$cch-blue: #2733FF;
-$cch-red: #FF2600;
-$darkest-grey: #4A4A4A;
-$grey: #575757;
-$mid-grey: #8f8f8f;
+body {
+    --prime-color: #367A69;
+    --second-color: #FFEDED;
+}
+$dark-grey: #484848;
 $white: #fff;
-$light-grey: #cacaca;
+$blush: #FFFAFA;
 
 .bg-white  { background-color: $white }
 .bg-black  { background-color: black }
-
+xw
 .blue-text {
-    color: $cch-blue;
+    color: blue;
 }
 
 .blue-bg {
-    background-color: $cch-blue;
+    background-color: blue;
 }
 .blue-fill {
-    fill: $cch-blue;
+    fill: blue;
 }
 
 .red-text {
-    color: $cch-red;
+    color: red;
 }
 .red-bg {
-    background-color: $cch-red;
+    background-color: red;
 }
 .red-fill {
-    fill: $cch-red;
+    fill: red;
 }

@@ -1,41 +1,139 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Asul');
+
+@font-face {
+font-family: 'LeagueMono';
+src: url('/assets/fonts/LeagueMono-RegularNormal.woff2') format('woff2');
+src: url('/assets/fonts/LeagueMono-RegularNormal.woff') format('woff');
+font-weight: 300;
+}
+@font-face {
+font-family: 'LeagueMono';
+src: url('/assets/fonts/LeagueMono-SemiBoldNormal.woff2') format('woff2');
+src: url('/assets/fonts/LeagueMono-SemiBoldNormal.woff') format('woff');
+font-weight: 500;
+}
+@font-face {
+font-family: 'LeagueMono';
+src: url('/assets/fonts/LeagueMono-ExtraBoldExtended.woff2') format('woff2');
+src: url('/assets/fonts/LeagueMono-ExtraBoldExtended.woff') format('woff');
+font-weight: 800;
+}
+
+* {
+    margin: 0;
+}
 
 body{
-margin: 0;
-padding: 0;
-font-family: 'Work Sans', sans-serif;
-color: $cch-blue;
+    margin: 0;
+    padding: 0;
+    font-family: LeagueMono, monospace;
+    font-weight: 300;
+    color: #484848;
 }
 
-p {
+// PLAIN STYLES
+
+.league-extrabold {
+    font-family: LeagueMono, monospace;
+    font-weight: 800;
+}
+.league-bold {
+    font-family: LeagueMono, monospace;
+    font-weight: 500;
+}
+.league-normal {
+    font-family: LeagueMono, monospace;
     font-weight: 300;
-	font-size: 16px;
-	line-height: 48px;
-	margin: 0;
-	margin-bottom: 1rem;
-    letter-spacing: .3px;
-    color: darken( $cch-blue, 16% );
+}
+.asul {
+    font-family: 'Asul', sans-serif;
+    font-weight: 100;
+}
 
-    a {
-       color: inherit;
-       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0%3C/style%3E%3Cpath fill='none' stroke='%23f00' stroke-width='3' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-       background-position: 0 21px;
-       background-size: 17px 7px;
-       background-repeat: repeat-x;
-       padding-bottom: 13px;
-       text-decoration: none;
-     &:hover {
-           background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23f00' stroke-width='3' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-     }
-   }
+// TEXT STYLE
 
+.jumbo {
+    font-family: 'Asul', sans-serif;
+    font-size: 120px;
+    letter-spacing: -1.88px;
+    line-height: 1;
+    font-weight: 100;
 
-    @media #{$media-max-tablet}{
-        font-size: 18px;
-    	line-height: 38px;
-        font-weight: 400;
+    @media #{$media-max-s}{
+        font-size: 80px;
     }
 }
+
+.large {
+    font-family: 'Asul', sans-serif;
+    font-size: 40px;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+.medium {
+    font-family: 'Asul', sans-serif;
+    font-size: 32px;
+    line-height: 1.25;
+    font-weight: 100;
+    @media #{$media-max-s}{
+        font-size: 24px;
+    }
+}
+
+.small {
+    font-family: LeagueMono, monospace;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    line-height: 32px;
+}
+
+.label-l, .label {
+    font-family: LeagueMono, monospace;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: $SMALL;
+}
+
+.label {
+    font-size: 10px;
+    line-height: 12px;
+    color: black;
+}
+
+.body, p, .body-s {
+    font-family: LeagueMono, monospace;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.body-s,  {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: $SMALL;
+}
+
+
+
+// a {
+//    color: inherit;
+//    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0%3C/style%3E%3Cpath fill='none' stroke='%23f00' stroke-width='3' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+//    background-position: 0 21px;
+//    background-size: 17px 7px;
+//    background-repeat: repeat-x;
+//    padding-bottom: 13px;
+//    text-decoration: none;
+//
+//    &:hover {
+//        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23f00' stroke-width='3' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+//    }
+//  }
+
 
 .eyebrow {
     margin: 0 0 1rem;
@@ -43,80 +141,6 @@ p {
     font-weight: 900;
     letter-spacing: 6px;
     font-size: 16px;
-}
-
-h1 {
-    font-weight: 800;
-    font-size: 64px;
-    line-height: 1.15em;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-h2 {
-    font-weight: 200;
-    font-size: 2.3rem;
-    margin: 0;
-    line-height: 62px;
-}
-
-h3 {
-    font-size: 41px;
-    font-weight: 800;
-    color: $cch-red;
-    letter-spacing: 18px;
-    line-height: 46px;
-    text-transform: uppercase;
-    position: relative;
-    margin-bottom: 6rem;
-    margin-top: 0;
-    max-width: 50%;
-    @media #{$media-max-tablet}{
-        letter-spacing: 13px;
-    }
-
-    &:after {
-        content: "";
-        width: 6rem;
-        height: 7px;
-        background-color: #2733FF;
-        position: absolute;
-        bottom: -3.4rem;
-        left: 0;
-    }
-}
-
-
-
-
-h4{
-    font-size: 32px;
-    font-weight: 500;
-    color: $cch-red;
-    letter-spacing: 18px;
-    line-height: 38px;
-    text-transform: uppercase;
-    position: relative;
-    margin-bottom: 4rem;
-    margin-top: 0;
-    max-width: 68%;
-
-    @media #{$media-max-tablet}{
-        letter-spacing: 12px;
-    }
-
-    &:after {
-        content: "";
-        width: 4rem;
-        height: 5px;
-        background-color: #2733FF;
-        position: absolute;
-        bottom: -2.3rem;
-        left: 0;
-    }
-}
-h5 {
-    font-size: 25px;
 }
 
 
@@ -141,7 +165,7 @@ li p {
 }
 
 .text-link {
-    @media #{$media-max-tablet}{
+    @media #{$media-max-s}{
         background-position: 0 30px;
         background-size: 23px 9px;
     }

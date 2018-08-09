@@ -3,13 +3,13 @@ $transition-2: .3s ease-out;
 
 .move-vert {
     transform: translateY(var(--yu));
-    @media #{$media-max-tablet}{
+    @media #{$media-max-s}{
             transform: translateY(calc(var(--yu)/2));
     }
 }
 .move-horiz {
     transform: translateX(var(--yu));
-    @media #{$media-max-tablet}{
+    @media #{$media-max-s}{
             transform: translateX(calc(var(--yu)/2));
     }
 }
