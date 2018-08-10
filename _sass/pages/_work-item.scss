@@ -1,0 +1,93 @@
+.work-hero {
+    grid-column: 2 / 12;
+    justify-self: start;
+    justify-content: start;
+
+    padding-top: 278px;
+    z-index: 1;
+
+    @media #{$media-max-s}{
+        padding-top: 168px;
+    }
+}
+
+.color-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 368px;
+    background-color: var(--prime-color);
+    // eventually replace
+    background-image: url(/uploads/noise.png);
+    background-size: cover;
+    background-blend-mode: exclusion;
+
+    z-index: 0;
+    border: 32px solid $blush;
+
+    @media #{$media-max-m}{
+        border: 16px solid $blush;
+    }
+    @media #{$media-max-s}{
+        height: 230px;
+    }
+}
+
+.work-title {
+    margin-bottom: $TINY;
+    @media #{$media-max-s}{
+        margin-bottom: 0;
+    }
+}
+
+
+.portfolio-hero_wrap {
+    position: relative;
+    height: 340px;
+    background-color: var(--prime-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 32px;
+}
+
+
+// meta and intro big-statement
+
+
+
+.meta {
+    grid-column: 2 / 6;
+    margin-top: $SMALL;
+
+    & section {
+        margin-bottom: $MEDIUM;
+    }
+
+    @media #{$media-max-l}{
+        grid-column: 1 / 6;
+    }
+}
+
+.intro {
+    grid-column: 6 / 12;
+    justify-content: flex-start;
+    color: var(--prime-color);
+
+    & strong {
+        color: black;
+        font-weight: 100;
+    }
+
+    @media #{$media-max-l}{
+        grid-column: 6 / 13;
+    }
+}
+
+.meta, .intro {
+    @media #{$media-max-s}{
+        grid-column: 1 / 13;
+    }
+
+}

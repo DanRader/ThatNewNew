@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Asul');
+
+@font-face {
+font-family: 'LeagueMono';
+src: url('/assets/fonts/LeagueMono-LightNormal.woff2') format('woff2');
+src: url('/assets/fonts/LeagueMono-LightNormal.woff') format('woff');
+font-weight: 100;
+}
+@font-face {
+font-family: 'LeagueMono';
+src: url('/assets/fonts/LeagueMono-RegularNormal.woff2') format('woff2');
+src: url('/assets/fonts/LeagueMono-RegularNormal.woff') format('woff');
+font-weight: 300;
+}
+@font-face {
+font-family: 'LeagueMono';
+src: url('/assets/fonts/LeagueMono-SemiBoldNormal.woff2') format('woff2');
+src: url('/assets/fonts/LeagueMono-SemiBoldNormal.woff') format('woff');
+font-weight: 500;
+}
+@font-face {
+font-family: 'LeagueMono';
+src: url('/assets/fonts/LeagueMono-ExtraBoldWide.woff2') format('woff2');
+src: url('/assets/fonts/LeagueMono-ExtraBoldWide.woff') format('woff');
+font-weight: 800;
+}
+
+* {
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: LeagueMono, monospace;
+    font-weight: 300;
+    color: $dark-grey;
+}
+
+
+// TEXT STYLE
+
+.jumbo {
+    font-family: 'Asul', sans-serif;
+    font-size: 120px;
+    letter-spacing: -1.88px;
+    line-height: 1;
+    font-weight: 100;
+
+    @media #{$media-max-s}{
+        font-size: 80px;
+    }
+}
+
+.large {
+    font-family: 'Asul', sans-serif;
+    font-size: 40px;
+    line-height: 1.25;
+    font-weight: 100;
+    @media #{$media-max-m}{
+        font-size: 32px;
+    }
+}
+
+.medium {
+    font-family: 'Asul', sans-serif;
+    font-size: 32px;
+    line-height: 1.25;
+    font-weight: 100;
+    @media #{$media-max-s}{
+        font-size: 24px;
+    }
+}
+
+.small {
+    font-family: LeagueMono, monospace;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: $dark-grey;
+}
+
+.label-l, .label {
+    font-family: LeagueMono, monospace;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: $SMALL;
+}
+
+.label {
+    font-size: 10px;
+    line-height: 12px;
+    color: black;
+}
+
+.body, p {
+    font-family: LeagueMono, monospace;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: $MEDIUM;
+    @media #{$media-max-s}{
+        font-size: 15px;
+        line-height: 32px;
+    }
+}
+
+.body-s  {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: $SMALL;
+}
+
+
+
+// a {
+//    color: inherit;
+//    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0%3C/style%3E%3Cpath fill='none' stroke='%23f00' stroke-width='3' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+//    background-position: 0 21px;
+//    background-size: 17px 7px;
+//    background-repeat: repeat-x;
+//    padding-bottom: 13px;
+//    text-decoration: none;
+//
+//    &:hover {
+//        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23f00' stroke-width='3' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+//    }
+//  }
+
+
+.eyebrow {
+    margin: 0 0 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 6px;
+    font-size: 16px;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+strong {
+  font-weight: 700;
+}
+
+ul, ol {
+    margin-left: 27px;
+}
+
+li p {
+  margin-bottom: 11px;
+  color: black;
+  line-height: 26px !important;
+}
+
+.text-link {
+    @media #{$media-max-s}{
+        background-position: 0 30px;
+        background-size: 23px 9px;
+    }
+}
+
+hr {
+  opacity: 0.4;
+}

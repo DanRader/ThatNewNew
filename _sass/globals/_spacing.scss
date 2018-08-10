@@ -1,0 +1,81 @@
+$TINY: 8px;
+$SMALL: 16px;
+$NORMAL: 24px;
+$MEDIUM: 40px;
+$LARGE: 64px;
+$XLARGE: 80px;
+$XXLARGE: 112px;
+
+// margin-bottom
+.mb-tiny {
+    margin-bottom: $TINY;
+}
+.mb-small {
+    margin-bottom: $SMALL;
+}
+.mb-normal {
+    margin-bottom: $NORMAL;
+}
+.mb-medium {
+    margin-bottom: $MEDIUM;
+}
+.mb-large {
+    margin-bottom: $LARGE;
+}
+.mb-xlarge {
+    margin-bottom: $XLARGE;
+}
+.mb-xxlarge {
+    margin-bottom: $XXLARGE;
+
+    @media #{$media-max-m}{
+        margin-bottom: $LARGE;
+    }
+}
+
+
+.mt-tiny {
+    margin-top: $TINY;
+}
+.mt-small {
+    margin-top: $SMALL;
+}
+.mt-normal {
+    margin-top: $NORMAL;
+}
+.mt-medium {
+    margin-top: $MEDIUM;
+}
+.mt-large {
+    margin-top: $LARGE;
+}
+.mt-xlarge {
+    margin-top: $XLARGE;
+}
+.mt-xxlarge {
+    margin-top: $XXLARGE;
+}
+
+
+
+.my-tiny {
+    margin: $TINY 0;
+}
+.my-small {
+    margin: $SMALL 0;
+}
+.my-normal {
+    margin: $NORMAL 0;
+}
+.my-medium {
+    margin: $MEDIUM 0;
+}
+.my-large {
+    margin: $LARGE 0;
+}
+.my-xlarge {
+    margin: $XLARGE 0;
+}
+.my-xxlarge {
+    margin: $XXLARGE 0;
+}

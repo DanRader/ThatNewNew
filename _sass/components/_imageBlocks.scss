@@ -1,0 +1,44 @@
+.imageWrapper {
+    margin-left: $MEDIUM;
+    margin-right: $MEDIUM;
+
+    & img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        // height: 75vh;
+
+        @media #{$media-max-m}{
+            height: 64vh;
+        }
+    }
+
+    @media #{$media-max-m}{
+        margin-left: $NORMAL;
+        margin-right: $NORMAL;
+    }
+
+    @media #{$media-max-s}{
+        margin-left: $SMALL;
+        margin-right: $SMALL;
+    }
+}
+
+.grid-twoUp {
+    grid-template-columns: repeat(2, 1fr);
+
+    @media #{$media-max-m}{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.grid-oneUp {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.work-contentWrap {
+    //  THIS IS A BANDADE FIX
+    p > img {
+        height: 100vh;
+    }
+}

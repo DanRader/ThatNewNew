@@ -1,0 +1,42 @@
+.footer_outerwrap {
+    background-color: $dark-blush;
+    border: 32px solid $blush;
+    background-image: url(/uploads/DanHeadshot1.jpg);
+    background-blend-mode: overlay;
+    background-position: 80% 50%;
+    background-size: cover;
+
+    @media #{$media-max-m}{
+        border: 16px solid $blush;
+    }
+}
+
+.work-footer {
+    grid-column: 2 / 8;
+    min-height: 60vh;
+    width: 100%;
+    padding-top: $XXLARGE;
+    padding-bottom: $XXLARGE;
+
+    & p {
+        opacity: .3;
+    }
+    @media #{$media-max-m}{
+        grid-column: 2 / 12;
+    }
+    @media #{$media-max-s}{
+        grid-column: 1 / 13;
+        padding-top: $NORMAL;
+        padding-bottom: $NORMAL;
+    }
+}
+
+.footer-email {
+    margin-top: $LARGE;
+
+    & p {
+        opacity: .6;
+        font-size: 13px;
+        margin-bottom: $TINY;
+    }
+}

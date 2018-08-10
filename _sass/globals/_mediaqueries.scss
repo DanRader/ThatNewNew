@@ -1,0 +1,26 @@
+
+$l: 1400px;
+$m: 52em;
+$s: 32em;
+
+$media-min-xl: "screen and (min-width: #{$l})";
+$media-max-l: "screen and (max-width: #{$l})";
+$media-max-m: "screen and (max-width: #{$m})";
+$media-min-s: "screen and (min-width: #{$s})";
+$media-max-s: "screen and (max-width: #{$s})";
+// @media #{$media-max-s}{}
+// @media #{$media-max-l}{}
+// @media #{$media-min-xl}{}
+// @media #{$media-min-s}{}
+
+.hide-below-tablet {
+    @media #{$media-max-s}{
+        display: none;
+    }
+}
+
+.hide-above-tablet {
+     @media #{$media-min-s}{
+         display: none;
+     }
+}

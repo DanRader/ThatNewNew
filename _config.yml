@@ -1,6 +1,6 @@
 ---
-title: That New New
-timezone: UTC
+title: Dan Rader Portfolio
+timezone: America/New_York
 collections:
   posts:
     title: Posts
@@ -11,3 +11,11 @@ collections:
   work:
     title: Work
     output: true
+email: howdy@danrdesign.com
+description: replace me
+url: https://capitolciderhouse.com
+permalink: pretty
+social-media-image: 
+exclude:
+- node_modules
+- gulpfile.js

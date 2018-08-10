@@ -1,0 +1,49 @@
+
+<!-- SeoTags  -->
+
+<title>{{site.title}}</title>
+<meta property="og:title" content="{{ site.title | escape }}" />
+<meta name="description" content=" {{ site.description | strip_html }}"/>
+<meta property="og:description" content=" {{ site.description | strip_html }}"/>
+<link rel="canonical" href="{{site.url}}{{page.url}}" />
+<meta property="og:url" content="{{site.url}}{{page.url}}" />
+<meta property="og:site_name" content="{{site.title}}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="1200 " />
+<meta property="og:image" content="{{ site.url }}{{ site.social-media-image }}" />
+<meta property="og:type" content="website" />
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@CapCiderHouse" />
+<meta name="twitter:creator" content="@CapCiderHouse" />
+<meta name="twitter:title" content=" {{ site.title | escape }}">
+<meta name="twitter:description" content=" {{ site.description | strip_html }}">
+<meta name="twitter:image" content="{{ site.url }}{{ site.social-media-image }}">
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Washington",
+    "addressRegion": "DC",
+    "postalCode": "20011",
+    "streetAddress": "3930 Georgia Ave NW"
+  },
+  "name": "Capitol Cider House",
+  "openingHours": [
+
+    "Th-Fr 16:00-24:00",
+    "Sa-Su 12:00-24:00"
+  ],
+  "priceRange": "$",
+  "servesCuisine": [
+    "Cidery",
+    "Bar"
+  ],
+  "telephone": "(202) 621-0982",
+  "url": "{{site.url}}{{page.url}}"
+}
+</script>

@@ -1,0 +1,242 @@
+$tablet: 600px;
+$xl: 1400px;
+$l: 771px;
+
+$media-max-tablet: "screen and (max-width: #{$s})";
+$media-max-l: "screen and (max-width: #{$l})";
+$media-min-xl: "screen and (min-width: #{$xl})";
+// @media #{$media-max-s}{}
+// @media #{$media-max-l}{}
+// @media #{$media-min-xl}{}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+body {
+  min-height: 50vh;
+  position: relative;
+}
+
+
+.flex-1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.col-offset {
+    & p{
+        margin-left: 12.5%
+    }
+    & h3:after {
+        margin-left: 25%
+    }
+    @media #{$media-max-s}{
+        margin-left: 0;
+        & p{
+            margin-left: 0;
+        }
+        & h3:after {
+            margin-left: 0;
+        }
+    }
+}
+
+.col-offset-offset {
+    margin-left: 25%;
+
+    & p{
+        margin-left: 25%;
+    }
+    & h3:after {
+        margin-left: 50%;
+    }
+    @media #{$media-max-s}{
+        margin-left: 0;
+        & p{
+            margin-left: 0;
+        }
+        & h3:after {
+            margin-left: 0;
+        }
+    }
+}
+
+.col-bump {
+    margin-left: 20%;
+    @media #{$media-max-s}{
+        margin-left: 0;
+    }
+}
+
+.col-super-offset {
+    margin-left: 37.5%;
+    & p{
+        margin-left: 25%
+    }
+    & h3:after {
+        margin-left: 50%
+    }
+
+    @media #{$media-max-s}{
+        margin-left: 0;
+        & p{
+            margin-left: 0;
+        }
+        & h3:after {
+            margin-left: 0;
+        }
+    }
+}
+
+// Flexy
+.cntr-cntr-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vert-cntr-child {
+    display: flex;
+    align-items: center;
+}
+
+// Spacer Styles
+.vh150 {
+    height: 150vh;
+}
+
+.vh100 {
+    height: 100vh;
+}
+.vh80 {
+    height: 80vh;
+}
+.vh60 {
+    height: 80vh;
+}
+
+.my5 {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    @media #{$media-max-s}{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.my10 {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    @media #{$media-max-s}{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.my15 {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+
+    @media #{$media-max-s}{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+}
+
+.my20 {
+    margin-top: 18rem;
+    margin-bottom: 18rem;
+    @media #{$media-max-s}{
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+}
+
+.mb20 {
+    margin-bottom: 18rem;
+
+    @media #{$media-max-s}{
+        margin-bottom: 5rem;
+    }
+}
+
+.mb10 {
+    margin-bottom: 10rem;
+    @media #{$media-max-s}{
+        margin-bottom: 4rem;
+    }
+}
+
+.illo-space {
+    @media #{$media-max-s}{
+        padding-bottom: 23rem;
+    }
+}
+
+
+// Show/hide
+.show-xs {
+    display: none;
+    @media #{$media-max-s}{
+        display: inherit;
+    }
+}
+
+.hide-xs {
+    display: inherit;
+    @media #{$media-max-s}{
+        display: none;
+    }
+}
+
+
+
+// HIDE THE SCROLLBAR
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+
+
+.mouseOver_text {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: -2;
+  transform: translateY(-50%);
+  top: 50%;
+  text-align: center;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    user-select: none;
+    margin: 0 auto;
+  }
+}
+
+#previewImage {
+  position: absolute;
+  display: none;
+  color: #fff;
+  z-index: -2;
+  img {
+    width: 80vw;
+  }
+}

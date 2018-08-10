@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<!-- Assign page color -->
+<style media="screen">
+    body{
+        --prime-color: {{ page.prime-color }}
+    }
+</style>
+
+<!-- hero header -->
+
+<div class="color-bg"></div>
+<div class="grid">
+    <div class="work-hero mb-xxlarge">
+        <h1 class="jumbo work-title">{{ page.title }}</h1>
+        <p class="medium work-subtitle">{{ page.sub-title }}</p>
+    </div>
+</div>
+
+<div class="full-width-img mb-xxlarge">
+    <img src="{{ page.hero-image }}" alt="{{ page.title }}-hero">
+</div>
+
+<!-- meta info -->
+
+    <div class="grid mb-xxlarge">
+        <div class="meta">
+            <section>
+                <h3 class="label">Client</h3>
+                <p class="body-s">{{ page.client }}</p>
+            </section>
+            <section>
+                <h3 class="label">Role</h3>
+                <p class="body-s">{{ page.role }}</p>
+            </section>
+            <section>
+                <h3 class="label">Collaborators</h3>
+                {% for collabs in page.collaborators %}
+                    <p class="body-s">{{ collabs | markdownify | remove: '<p>' | remove: '</p>'}}</p>
+                {% endfor %}
+            </section>
+        </div>
+        <div class="intro ">
+            <p class="large">{{ page.desc | markdownify | remove: '<p>' | remove: '</p>'}}</p>
+        </div>
+    </div>
+
+<!-- loop through content -->
+
+<div class="work-contentWrap">
+    {{ content }}
+</div>
+
+{% include components/work-footer.html %}
