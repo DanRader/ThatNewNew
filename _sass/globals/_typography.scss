@@ -2,6 +2,12 @@
 
 @font-face {
 font-family: 'LeagueMono';
+src: url('/assets/fonts/LeagueMono-LightNormal.woff2') format('woff2');
+src: url('/assets/fonts/LeagueMono-LightNormal.woff') format('woff');
+font-weight: 100;
+}
+@font-face {
+font-family: 'LeagueMono';
 src: url('/assets/fonts/LeagueMono-RegularNormal.woff2') format('woff2');
 src: url('/assets/fonts/LeagueMono-RegularNormal.woff') format('woff');
 font-weight: 300;
@@ -14,8 +20,8 @@ font-weight: 500;
 }
 @font-face {
 font-family: 'LeagueMono';
-src: url('/assets/fonts/LeagueMono-ExtraBoldExtended.woff2') format('woff2');
-src: url('/assets/fonts/LeagueMono-ExtraBoldExtended.woff') format('woff');
+src: url('/assets/fonts/LeagueMono-ExtraBoldWide.woff2') format('woff2');
+src: url('/assets/fonts/LeagueMono-ExtraBoldWide.woff') format('woff');
 font-weight: 800;
 }
 
@@ -28,27 +34,9 @@ body{
     padding: 0;
     font-family: LeagueMono, monospace;
     font-weight: 300;
-    color: #484848;
+    color: $dark-grey;
 }
 
-// PLAIN STYLES
-
-.league-extrabold {
-    font-family: LeagueMono, monospace;
-    font-weight: 800;
-}
-.league-bold {
-    font-family: LeagueMono, monospace;
-    font-weight: 500;
-}
-.league-normal {
-    font-family: LeagueMono, monospace;
-    font-weight: 300;
-}
-.asul {
-    font-family: 'Asul', sans-serif;
-    font-weight: 100;
-}
 
 // TEXT STYLE
 
@@ -67,8 +55,11 @@ body{
 .large {
     font-family: 'Asul', sans-serif;
     font-size: 40px;
-    line-height: 1.5;
+    line-height: 1.25;
     font-weight: 100;
+    @media #{$media-max-m}{
+        font-size: 32px;
+    }
 }
 
 .medium {
@@ -85,8 +76,8 @@ body{
     font-family: LeagueMono, monospace;
     font-weight: 500;
     font-size: 18px;
-    color: #000000;
     line-height: 32px;
+    color: $dark-grey;
 }
 
 .label-l, .label {
@@ -105,14 +96,19 @@ body{
     color: black;
 }
 
-.body, p, .body-s {
+.body, p {
     font-family: LeagueMono, monospace;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 40px;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: $MEDIUM;
+    @media #{$media-max-s}{
+        font-size: 15px;
+        line-height: 32px;
+    }
 }
 
-.body-s,  {
+.body-s  {
+    font-weight: 300;
     font-size: 13px;
     line-height: 1.4;
     margin-bottom: $SMALL;

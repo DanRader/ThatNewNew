@@ -1,0 +1,22 @@
+{% if include.img-2 %}
+<div class="mb-xxlarge grid grid-twoUp imageWrapper">
+        <img src="{{ include.img-1 }}" alt="{{ include.alt-1 }}">
+        <img src="{{ include.img-2 }}" alt="{{ include.alt-2 }}">
+</div>
+
+{% comment %} {% else-if include.img-3 %} {% endcomment %}
+<!-- <div class="grid grid-twoUp imageWrapper">
+        <img src="{{ include.img-1 }}" alt="{{ include.alt-1 }}">
+        <img src="{{ include.img-2 }}" alt="{{ include.alt-2 }}">
+</div>
+<div class="mb-xxlarge grid grid-oneUp imageWrapper">
+        <img src="{{ include.img-3 }}" alt="{{ include.alt-3 }}">
+</div> -->
+
+{% else %}
+
+<div class="mb-xxlarge grid grid-oneUp imageWrapper">
+        <img src="{{ include.img-1 }}" alt="{{ include.alt-1 }}">
+</div>
+
+{% endif %}

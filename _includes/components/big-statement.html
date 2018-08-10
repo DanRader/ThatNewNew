@@ -1,4 +1,10 @@
-<div class="b__big-statement">
-    <p class="statement">{{ include.statement }}</p>
-    <cite class="attribution">—{{ include.attribution }}</cite>
+<div class="grid mb-xxlarge">
+    <div class="big-statement">
+        <p class="large">{{ include.statement }}</p>
+
+        {% if include.attribution %}
+        <cite class="small">—{{ include.attribution }}</cite>
+        {% endif %}
+        
+    </div>
 </div>

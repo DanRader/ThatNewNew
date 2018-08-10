@@ -1,10 +1,13 @@
 
 <!-- there is logic here to change the column layout if there is a subtitle -->
-<div class="text-block{% if include.sub-title %}textWithSub{% endif %}">
-    <div class="title">
-        <h2><span>{{ include.title }}</span>{{ include.sub-title }}</h2>
+<div class="textblock-wrap">
+    <div class="mb-xxlarge grid text-block {% if include.sub-title %}textWithSub{% endif %}">
+        <div class="textBlock-title">
+            <h2 class="medium"><span>{{ include.title }}</span> {{ include.sub-title }}</h2>
+        </div>
+        <div class="textBlock-content">
+            {{ include.content | markdownify}}
+        </div>
     </div>
-    <div class="">
-        {{ include.content | markdownify}}
-    </div>
+    <p class="jumbo ghost-type">{{ include.title }}</p>
 </div>

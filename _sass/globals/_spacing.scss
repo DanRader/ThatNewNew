@@ -27,6 +27,10 @@ $XXLARGE: 112px;
 }
 .mb-xxlarge {
     margin-bottom: $XXLARGE;
+
+    @media #{$media-max-m}{
+        margin-bottom: $LARGE;
+    }
 }
 
 

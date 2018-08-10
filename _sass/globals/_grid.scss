@@ -12,7 +12,8 @@
     grid-row-gap: 32px;
     // justify-content: center;
     align-content: start;
-    margin: 0 80px 0 80px;
+    margin-right: $XLARGE;
+    margin-left: $XLARGE;
     height: 100%;
 
     & div {
@@ -23,12 +24,15 @@
     }
 
     @media #{$media-max-m}{
-        margin: 0 24px 0 24px;
+        margin-right: $NORMAL;
+        margin-left: $NORMAL;
         grid-column-gap: 16px;
+        grid-row-gap: 16px;
     }
 
     @media #{$media-max-s}{
-        margin: 0 16px 0 16px;
+        margin-right: $SMALL;
+        margin-left: $SMALL;
     }
 
 }

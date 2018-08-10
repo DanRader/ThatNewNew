@@ -4,7 +4,6 @@
     justify-content: start;
 
     padding-top: 278px;
-    margin-bottom: $XXLARGE;
     z-index: 1;
 
     @media #{$media-max-s}{
@@ -63,7 +62,7 @@
     margin-top: $SMALL;
 
     & section {
-        margin-bottom: $NORMAL;
+        margin-bottom: $MEDIUM;
     }
 
     @media #{$media-max-l}{
@@ -77,7 +76,7 @@
     color: var(--prime-color);
 
     & strong {
-        color: $dark-grey;
+        color: black;
         font-weight: 100;
     }
 
@@ -91,12 +90,4 @@
         grid-column: 1 / 13;
     }
 
-}
-
-
-.ghost-type {
-    color: transparent;
-    font-weight: 100;
-    -webkit-text-stroke: 1px black;
-    text-stroke: 1px black;
 }

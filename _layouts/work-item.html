@@ -13,7 +13,7 @@ layout: default
 
 <div class="color-bg"></div>
 <div class="grid">
-    <div class="work-hero">
+    <div class="work-hero mb-xxlarge">
         <h1 class="jumbo work-title">{{ page.title }}</h1>
         <p class="medium work-subtitle">{{ page.sub-title }}</p>
     </div>
@@ -25,8 +25,7 @@ layout: default
 
 <!-- meta info -->
 
-<div class="meta-wrap mb-xxlarge">
-    <div class="grid">
+    <div class="grid mb-xxlarge">
         <div class="meta">
             <section>
                 <h3 class="label">Client</h3>
@@ -47,10 +46,11 @@ layout: default
             <p class="large">{{ page.desc | markdownify | remove: '<p>' | remove: '</p>'}}</p>
         </div>
     </div>
-</div>
 
 <!-- loop through content -->
 
-<div class="content-wrap">
-    {% comment %}{{ content }}{% endcomment %}
+<div class="work-contentWrap">
+    {{ content }}
 </div>
+
+{% include components/work-footer.html %}
