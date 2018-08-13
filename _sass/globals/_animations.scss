@@ -1,6 +1,8 @@
 $transition-1: .15s ease-out;
 $transition-2: .3s ease-out;
 
+$fast-ramp: cubic-bezier(0.65, 0.02, 0.56, 0.87);
+
 .move-vert {
     transform: translateY(var(--yu));
     @media #{$media-max-s}{

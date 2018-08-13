@@ -1,0 +1,16 @@
+
+<h2 class="medium center mb-large">Care to See More?</h2>
+<div class="grid related-wrap">
+    {% for work in site.work limit: 6 %}
+    <a href="{{work.url}}" class="related-item ">
+        <div class="related-content">
+            <p class="label-l">0{{forloop.index}}</p>
+            <p class="medium">{{ work.title }}</p>
+            <p class="body-s">Check it out</p>
+            <div class="related-bg-color" style="background-color: {{ work.prime-color }}"></div>
+            <div class="related-bg-color bg-after"></div>
+        </div>
+    </a>
+    {% endfor %}
+
+</div>
