@@ -1,0 +1,47 @@
+.work-header {
+    & h1 {
+        z-index: 1;
+        position: relative;
+    }
+}
+
+$ghost-type-height: 160px;
+
+.marquee-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -123px;
+    left: -40px;
+    z-index: 0;
+    transform: rotate(-27deg);
+
+    & p {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: $ghost-type-height;
+        white-space: nowrap;
+
+        &:nth-child(1) {
+            top: calc(#{$ghost-type-height} * 1);
+        }
+        &:nth-child(2) {
+            top: calc(#{$ghost-type-height} * 2);
+        }
+        &:nth-child(3) {
+            top: calc(#{$ghost-type-height} * 3);
+        }
+        &:nth-child(4) {
+            top: calc(#{$ghost-type-height} * 4);
+        }
+        &:nth-child(5) {
+            top: calc(#{$ghost-type-height} * 5);
+        }
+        &:nth-child(6) {
+            top: calc(#{$ghost-type-height} * 6);
+        }
+    }
+
+
+}

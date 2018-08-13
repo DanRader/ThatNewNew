@@ -1,11 +1,13 @@
+
+
 .nav-wrapper {
     position: absolute;
     width: 100%;
     left: 0;
     z-index: 9999999;
-    height: 188px;
+    height: $nav-height;
     @media #{$media-max-s}{
-             height: 110px;
+             height: calc(#{$nav-height} / 1.7);
     }
 }
 

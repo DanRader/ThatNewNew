@@ -35,6 +35,7 @@
     border: 1px solid #ECECEC;
     transition: .3s all $fast-ramp;
     box-shadow: 0 23px 25px -14px rgba(0,0,0,0);
+    background-color: #FFFAFA;
 
     &:hover {
         box-shadow: 0 23px 25px -14px rgba(0,0,0,0.10);
@@ -48,7 +49,7 @@
             opacity: 1;
             transition: .3s all $fast-ramp;
         }
-        & .body-s:after {
+        & .body-s:after  {
                 transform: none;
                 opacity: 1;
             }
@@ -99,6 +100,9 @@
             display: inline-block;
         }
     }
+    & .medium {
+        font-size: 32px;
+    }
 }
 
 .related-bg-color {
@@ -116,6 +120,12 @@
 }
 
 .bg-after {
+    transition: 0.3s transform cubic-bezier(0, 0.28, 0, 0.99);
+    z-index: 1;
+    background-color: #f8f8f8;
+}
+
+.bg-before {
     transition: .3s transform ease-out;
     z-index: 1;
     background-color: #ECECEC;
