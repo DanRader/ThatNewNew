@@ -1,4 +1,5 @@
 ---
-layout: work-list
 title: Work
+layout: work-list
 ---
+
