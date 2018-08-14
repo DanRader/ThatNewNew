@@ -1,0 +1,4 @@
+---
+layout: thoughts
+title: Thought
+---
