@@ -1,6 +1,6 @@
 ---
 title: Pottery
-position: 4
+position: 3
 layout: work-list
 is-menu: true
 ---

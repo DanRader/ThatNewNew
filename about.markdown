@@ -1,6 +1,6 @@
 ---
 title: About
-position: 3
+position: 4
 layout: about
 is-menu: true
 ---
