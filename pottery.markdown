@@ -1,6 +1,7 @@
 ---
-layout: work-list
 title: Pottery
-is-menu: true
 position: 3
+layout: work-list
+is-menu: true
 ---
+
