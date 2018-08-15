@@ -54,6 +54,8 @@ nav {
 
 .brand-logo  {
     width: 2rem;
+    position: relative;
+
      @media #{$media-max-s}{
          width: 2rem;
          height: 50px;
@@ -124,7 +126,7 @@ nav {
         background-size: contain;
         transform: translateY(100%);
         transition: .4s all $fast-ramp;
-        padding: 9rem 9rem;
+        padding: 7rem 9rem 6rem;
         box-sizing: border-box;
         justify-content: space-between;
 
@@ -145,6 +147,10 @@ nav {
         @media #{$media-max-s}{
             width: 100%;
             padding: 2rem 3rem 3rem;
+        }
+
+        & .marquee-wrap {
+            display: none;
         }
     }
 
@@ -202,9 +208,6 @@ nav {
         }
     }
 
-#nav:checked > .mobile-logo svg {
-        fill: white;
-}
 
 #nav:checked + .nav-open {
     // transform: rotate(45deg) translateY(0) translateX(0);

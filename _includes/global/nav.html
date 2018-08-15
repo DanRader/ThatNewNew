@@ -2,19 +2,26 @@
 <div class="nav-wrapper ">
     <div class="grid grid-bottom ">
         <div class="nav-inside-wrapper">
-            <a href="#top" class="brand-logo"><img src="/uploads/DanRader.svg" alt="Dan Rader"></a>
+            <a href="/" class="brand-logo">{% include svg/DanRader.svg %}</a>
             <input type="checkbox" id="nav" class="hidden"/>
             <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
               <div class="nav-container fixed top-0 right-0 p1 z2 flex flex-column">
                     <ul class="block list-reset">
-                        <a href="/work" onclick='checkoff()'><li class="nav-item jumbo">Work</li></a>
-
-                        <a href="/thoughts" onclick='checkoff()'><li class="nav-item jumbo">Thought</li></a>
-
-                        <a href=/pottery onclick='checkoff()'><li class="nav-item jumbo">Pottery</li></a>
-
-                        <a href=/about onclick='checkoff()'><li class="nav-item jumbo">About</li></a>
-
+                        {% for navItem in site.pages | sort:"position" %}
+                            {% if navItem.is-menu == true %}
+                                <a href="{{ navItem.url }}" onclick='checkoff()'><li class="nav-item jumbo">{{ navItem.title }}</li></a>
+                                <div class="marquee-wrap {{ navItem.title }}-marquee">
+                                    {% capture title-repeat %}
+                                            {% for i in (1..7) %}
+                                                {{ navItem.title }}
+                                            {% endfor %}
+                                    {% endcapture%}
+                                    {% for i in (1..8) %}
+                                        <p class="jumbo ghost-type">{{ title-repeat | strip_newlines | strip }}</p>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
                     </ul>
             </div>
             <div class="related-bg-color bg-after"></div>

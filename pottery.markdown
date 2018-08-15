@@ -1,6 +1,6 @@
 ---
 layout: work-list
-title: Work
+title: Pottery
 is-menu: true
-position: 1
+position: 3
 ---
