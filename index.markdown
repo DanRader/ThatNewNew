@@ -1,5 +1,6 @@
 ---
 title: Home
+position: 0
 is-open-month-only: false
 hours: Thurs & Fri — 4pm to 10pm Sat & Sun — 11am to 10pm
 why-cider:
