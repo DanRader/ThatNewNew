@@ -55,25 +55,3 @@
         }
     }
 }
-
-
-.ghost-type {
-    position: absolute;
-    top: -54px;
-    left: 32px;
-    color: transparent;
-    font-weight: 100;
-    -webkit-text-stroke: 1px #e4e4e4;
-    text-stroke: 1px #e4e4e4;
-    width: 80%;
-    font-size: 152px;
-    line-height: .8;
-
-    @media #{$media-max-m}{
-        left: 8px;
-        top: -24px;
-    }
-    @media #{$media-max-s}{
-        display: none;
-    }
-}

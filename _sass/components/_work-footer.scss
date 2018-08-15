@@ -1,10 +1,24 @@
 .footer_outerwrap {
     background-color: $dark-blush;
     border: 32px solid $blush;
-    background-image: url(/uploads/DanHeadshot1.jpg);
+    background-image: url(/uploads/headshot_ext.jpg);
     background-blend-mode: overlay;
     background-position: 80% 50%;
     background-size: cover;
+    position: relative;
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url(/uploads/noise.png);
+        background-blend-mode: exclusion;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .5;
+        z-index: 1;
+    }
 
     @media #{$media-max-m}{
         border: 16px solid $blush;
@@ -17,6 +31,7 @@
     width: 100%;
     padding-top: $XXLARGE;
     padding-bottom: $XXLARGE;
+    max-width: 520px;
 
     & p {
         opacity: .3;

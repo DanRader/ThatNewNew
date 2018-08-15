@@ -1,0 +1,63 @@
+.list-header {
+    & h1 {
+        z-index: 1;
+        position: relative;
+    }
+}
+
+
+
+.marquee-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -333px;
+    left: -40px;
+    z-index: 0;
+    transform: rotate(-27deg);
+    transition: .3s all;
+
+    --ghost-type-height: 160px;
+
+    & p {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: var(--ghost-type-height);
+        white-space: nowrap;
+        animation: animatedText 42s linear infinite;
+
+        @media #{$media-max-s}{
+            animation: animatedText-small 15s linear infinite;
+            top: 0px;
+            left: 0px;
+            }
+    }
+
+    & .ghost-type {
+        display: block;
+
+        @media #{$media-max-s}{
+            --ghost-type-height: 105.6px;
+            font-size: 100px;
+        }
+    }
+}
+
+// WOOHOO FOR LOOP IN SCSS!
+
+@for $i from 1 through 8 {
+    .marquee-wrap p:nth-child(#{$i}) {
+        top: calc(var(--ghost-type-height) * #{$i});
+    }
+}
+
+
+@keyframes animatedText {
+	from { transform: translateX(0);}
+	to { transform: translateX(-55.5%); }
+}
+@keyframes animatedText-small {
+	from { transform: translateX(0);}
+	to { transform: translateX(-27.75%); }
+}

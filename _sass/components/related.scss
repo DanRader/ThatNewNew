@@ -1,0 +1,132 @@
+.related-wrap {
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 180px;
+    margin-right: 180px;
+
+    @media screen and (max-width: 1200px){
+        margin-right: $XLARGE;
+        margin-left: $XLARGE;
+    }
+
+    @media screen and (max-width: 1000px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media #{$media-max-m}{
+        margin-right: $NORMAL;
+        margin-left: $NORMAL;
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+    }
+
+    @media #{$media-max-s}{
+        margin-right: $SMALL;
+        margin-left: $SMALL;
+    }
+
+    @media screen and (max-width: 600px){
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.related-item{
+    position: relative;
+    border: 1px solid #ECECEC;
+    transition: .3s all $fast-ramp;
+    box-shadow: 0 23px 25px -14px rgba(0,0,0,0);
+    background-color: #FFFAFA;
+
+    &:hover {
+        box-shadow: 0 23px 25px -14px rgba(0,0,0,0.10);
+        border: 1px solid transparent;
+
+        & .related-bg-color{
+            transform: none;
+        }
+
+        & .body-s, .label-l {
+            opacity: 1;
+            transition: .3s all $fast-ramp;
+        }
+        & .body-s:after  {
+                transform: none;
+                opacity: 1;
+            }
+    }
+
+    &:before {
+          display: block;
+          content: "";
+          width: 100%;
+          padding-top: 88%;
+    }
+
+    > .related-content {
+          position: absolute;
+          padding: 32px;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+    }
+    & p {
+        position: relative;
+        z-index: 3;
+    }
+
+    & .label-l {
+        opacity: .6;
+        letter-spacing: -2px;
+        font-size: 15px;
+    }
+    & .body-s {
+        margin-bottom: 32px;
+        position: absolute;
+        bottom: 0;
+        font-weight: 400;
+        opacity: .6;
+
+        &:after {
+            content: "👉";
+            font-size: 24px;
+            margin-left: 16px;
+            top: 3px;
+            position: relative;
+            transform: translateX(-8px);
+            transition: .3s all $fast-ramp;
+            transform-origin: left;
+            opacity: 0;
+            display: inline-block;
+        }
+    }
+    & .medium {
+        font-size: 32px;
+    }
+}
+
+.related-bg-color {
+    transform: scaleY(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-image: url(/uploads/noise.png);
+    background-size: 320%;
+    background-blend-mode: exclusion;
+    transform-origin: bottom;
+    transition: .3s transform $fast-ramp;
+    z-index: 2;
+}
+
+.bg-after {
+    transition: 0.3s transform cubic-bezier(0, 0.28, 0, 0.99);
+    z-index: 1;
+    background-color: #f8f8f8;
+}
+
+.bg-before {
+    transition: .3s transform ease-out;
+    z-index: 1;
+    background-color: #ECECEC;
+}

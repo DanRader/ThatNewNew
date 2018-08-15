@@ -1,3 +1,12 @@
+$nav-height: 188px;
+
+.clear-nav {
+    padding-top: calc(#{$nav-height} * 1.2);
+    @media #{$media-max-s}{
+        padding-top: calc(#{$nav-height} * 0.65)
+    }
+}
+
 .body-wrap {
     overflow: hidden;
     background-color: $blush;
@@ -7,7 +16,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(60px, auto);
-    max-width: 1600px;
+    // max-width: 1600px;
     grid-column-gap: 32px;
     grid-row-gap: 32px;
     // justify-content: center;

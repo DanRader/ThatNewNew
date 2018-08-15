@@ -1,4 +1,6 @@
 ---
-layout: work-list
+title: Work
+position: 1
+is-menu: true
 ---
 

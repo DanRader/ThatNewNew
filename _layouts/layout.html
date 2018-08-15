@@ -1,7 +1,8 @@
 ---
-layout: list-page
+layout: default
 ---
 
+<h2 class="medium center mb-large">Care to See More?</h2>
 <div class="grid related-wrap mb-large">
     {% for work in site.work %}
     <a href="{{work.url}}" class="related-item ">
@@ -15,6 +16,5 @@ layout: list-page
         </div>
     </a>
     {% endfor %}
-</div>
 
-{% include components/work-footer.html %}
+</div>
