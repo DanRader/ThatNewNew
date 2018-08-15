@@ -1,5 +1,6 @@
 ---
 title: Work
-is-menu: true
 position: 1
+is-menu: true
 ---
+
