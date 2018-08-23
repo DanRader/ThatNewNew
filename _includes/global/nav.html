@@ -7,7 +7,8 @@
             <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
               <div class="nav-container fixed top-0 right-0 p1 z2 flex flex-column">
                     <ul class="block list-reset">
-                        {% for navItem in site.pages | sort:"position" %}
+                        {% assign sorted_navItem = site.pages | sort:"position" %}
+                        {% for navItem in sorted_navItem %}
                             {% if navItem.is-menu == true %}
                                 <a href="{{ navItem.url }}" onclick='checkoff()'><li class="nav-item jumbo">{{ navItem.title }}</li></a>
                                 <div class="marquee-wrap {{ navItem.title }}-marquee">

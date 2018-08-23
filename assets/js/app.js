@@ -26,3 +26,17 @@ function showMouseOut() {
 
 // target the marquee with the class var-marquee,
 // give it the class active and make it visible
+
+$(document).ready(function() {
+    var movementStrength = 20;
+    var height = movementStrength / $(window).height();
+    var width = movementStrength / $(window).width();
+
+    $("#top-image").mousemove(function(e){
+             var pageX = e.pageX - ($(window).width() / 2);
+             var pageY = e.pageY - ($(window).height() / 2);
+             var newvalueX = width * pageX * 1 + 0;
+             var newvalueY = height * pageY * 1 + 0;
+             $('#top-image').css("background-position", "calc(100% + "+newvalueX+"px)"+" calc(50% + "+newvalueY+"px), "+" right center");
+    });
+});

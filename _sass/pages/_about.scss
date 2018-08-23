@@ -1,5 +1,85 @@
+// Refactor me in other places
+
+.noise {
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url(/uploads/noise.png);
+        background-blend-mode: exclusion;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .5;
+        z-index: 1;
+    }
+}
+
+// Move me somewhere more global
+.border-patrol {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    &:before {
+        content: "";
+        border-top: 1px solid $prime-color;
+        border-left: 1px solid $prime-color;
+        width: 88%;
+        height: 80%;
+        position: absolute;
+        top: 24px;
+        left: 24px;
+    }
+
+    &:after{
+        content: "";
+        border-right: 1px solid $prime-color;
+        border-bottom: 1px solid $prime-color;
+        width: 88%;
+        height: 80%;
+        position: absolute;
+        bottom: 24px;
+        right: 24px;
+    }
+}
+
+//////////
+
 .about-outer {
     min-height: 100vh;
     width: 100vw;
     background-color: $second-color;
+    background-image: url(/uploads/thinker_ext.jpg), url(/uploads/thinker_ext2.jpg);
+    background-size: cover;
+    background-position: right;
+    background-blend-mode: overlay;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.about-inner {
+    padding-top: 224px;
+}
+
+.about-content {
+    grid-column: 2 / 8;
+
+    & h1 {
+        margin-bottom: $SMALL;
+        & span {
+            margin-left: $TINY;
+            font-size: 48px;
+            top: 3px;
+            position: relative;
+        }
+    }
+
+    & p {
+        font-size: 14px;
+        line-height: 31px;
+        padding-bottom: 12px;
+    }
 }
