@@ -1,6 +1,7 @@
 ---
 title: Work
-layout: work-list
 position: 1
+layout: work-list
 is-menu: true
 ---
+
