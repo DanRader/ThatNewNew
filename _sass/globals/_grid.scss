@@ -16,10 +16,8 @@ $nav-height: 188px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(60px, auto);
-    // max-width: 1600px;
     grid-column-gap: 32px;
     grid-row-gap: 32px;
-    // justify-content: center;
     align-content: start;
     margin-right: $XLARGE;
     margin-left: $XLARGE;
@@ -28,27 +26,28 @@ $nav-height: 188px;
     & div {
         justify-self: start;
         // display: grid;
-        justify-content: start;
+        // justify-content: start;
         width: 100%;
     }
 
     @media #{$media-max-m}{
-        margin-right: $NORMAL;
-        margin-left: $NORMAL;
+        margin-right: 32px;
+        margin-left: 32px;
         grid-column-gap: 16px;
         grid-row-gap: 16px;
     }
 
-    @media #{$media-max-s}{
-        margin-right: $SMALL;
-        margin-left: $SMALL;
-    }
+    // @media #{$media-max-s}{
+    //     margin-right: $SMALL;
+    //     margin-left: $SMALL;
+    // }
 
 }
 
 .grid-bottom {
     align-content: end;
 }
+
 
 
 .full-width-img {

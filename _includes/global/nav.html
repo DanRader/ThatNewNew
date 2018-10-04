@@ -2,9 +2,10 @@
 <div class="nav-wrapper ">
     <div class="grid grid-bottom ">
         <div class="nav-inside-wrapper">
-            <a href="/" class="brand-logo">{% include svg/DanRader.svg %}</a>
+            {% assign current = page.title | downcase %}
+            <a href="/" class="brand-logo {% if current contains 'home' %}nav-home{% endif %}">{% include svg/DanRader.svg %}</a>
             <input type="checkbox" id="nav" class="hidden"/>
-            <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
+            <label for="nav" class="nav-open {% if current contains 'home' %}nav-home{% endif %}"><i></i><i></i><i></i></label>
               <div class="nav-container fixed top-0 right-0 p1 z2 flex flex-column">
                     <ul class="block list-reset">
                         {% assign sorted_navItem = site.pages | sort:"position" %}
@@ -12,14 +13,14 @@
                             {% if navItem.is-menu == true %}
                                 <a href="{{ navItem.url }}" onclick='checkoff()'><li class="nav-item jumbo">{{ navItem.title }}</li></a>
                                 <div class="marquee-wrap {{ navItem.title }}-marquee">
-                                    {% capture title-repeat %}
+                                    <!-- {% capture title-repeat %}
                                             {% for i in (1..7) %}
                                                 {{ navItem.title }}
                                             {% endfor %}
                                     {% endcapture%}
                                     {% for i in (1..8) %}
                                         <p class="jumbo ghost-type">{{ title-repeat | strip_newlines | strip }}</p>
-                                    {% endfor %}
+                                    {% endfor %} -->
                                 </div>
                             {% endif %}
                         {% endfor %}

@@ -16,35 +16,7 @@
 }
 
 // Move me somewhere more global
-.border-patrol {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
 
-    &:before {
-        content: "";
-        border-top: 1px solid $prime-color;
-        border-left: 1px solid $prime-color;
-        width: 88%;
-        height: 80%;
-        position: absolute;
-        top: 24px;
-        left: 24px;
-    }
-
-    &:after{
-        content: "";
-        border-right: 1px solid $prime-color;
-        border-bottom: 1px solid $prime-color;
-        width: 88%;
-        height: 80%;
-        position: absolute;
-        bottom: 24px;
-        right: 24px;
-    }
-}
 
 //////////
 
@@ -58,14 +30,37 @@
     background-blend-mode: overlay;
     position: relative;
     background-repeat: no-repeat;
+    transition: .2s all ease-out;
+
+    @media #{$media-max-m}{
+        background-image: url(/uploads/thinker_ext.jpg);
+        background-position: 70% 100% !important;
+    }
 }
 
 .about-inner {
     padding-top: 224px;
+    position: relative;
+
+    @media #{$media-max-s}{
+        padding-top: 115px;
+        padding-bottom: $NORMAL;
+    }
+
 }
 
+
 .about-content {
-    grid-column: 2 / 8;
+    grid-column: 2 / 12;
+    max-width: 600px;
+
+    @media #{$media-max-s}{
+        grid-column: 1 / 13;
+    }
+
+    .large {
+        font-size: 40px;
+    }
 
     & h1 {
         margin-bottom: $SMALL;
@@ -78,8 +73,84 @@
     }
 
     & p {
-        font-size: 14px;
-        line-height: 31px;
+        font-size: 13px;
+        line-height: 32px;
         padding-bottom: 12px;
+
+        @media #{$media-max-s}{
+            font-size: 14px;
+            letter-spacing: -1px;
+            font-weight: 300;
+        }
+    }
+    & .email {
+        color: transparent;
+        font-weight: 100;
+        -webkit-text-stroke: 1px #8a8a8a;
+        text-stroke: 1px #8a8a8a;
+        line-height: .8;
+        font-size: 3vw;
+        transform: none;
+        color: transparent;
+        transition: .3s all;
+        cursor: pointer;
+        display: block;
+
+        @media #{$media-max-m}{
+            font-size: 32px;
+        }
+        @media #{$media-max-s}{
+            font-size: 24px;
+        }
+
+        &:hover {
+            transform: translateX(4px);
+            color: black;
+            -webkit-text-stroke: 1px black;
+        }
+    }
+}
+
+.about-contact {
+    position: relative;
+    z-index: 3;
+   }
+
+.about-linkrow {
+    margin-bottom: $NORMAL;
+
+    & .label {
+        margin-right: 24px;
+        position: relative;
+        display: inline-block;
+        transform: none;
+        transition: .3s all;
+
+        &:after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            bottom: -2px;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            background-color: $prime-color;
+            transform: scaleX(0) translateY(0);
+            transform-origin: left;
+            transition: .3s all;
+        }
+
+        &:hover {
+            color: $prime-color;
+            transform: translateY(-2px);
+
+            &.label:after {
+                transform: scaleX(1) translateY(2px);
+            }
+        }
+
+        &:last-child{
+            margin-right: 0;
+        }
     }
 }
