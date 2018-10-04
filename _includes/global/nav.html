@@ -5,7 +5,7 @@
             {% assign current = page.title | downcase %}
             <a href="/" class="brand-logo {% if current contains 'home' %}nav-home{% endif %}">{% include svg/DanRader.svg %}</a>
             <input type="checkbox" id="nav" class="hidden"/>
-            <label for="nav" class="nav-open {% if current contains 'home' %}nav-home{% endif %}"><i></i><i></i><i></i></label>
+            <label for="nav" class="nav-open {% if current contains 'home' %}nav-home{% endif %} {% if page.hide-nav == true' %}hidden{% endif %}"><i></i><i></i><i></i></label>
               <div class="nav-container fixed top-0 right-0 p1 z2 flex flex-column">
                     <ul class="block list-reset">
                         {% assign sorted_navItem = site.pages | sort:"position" %}

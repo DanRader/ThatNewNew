@@ -49,7 +49,7 @@
     color: $second-color;
     font-weight: 100;
 
-    & a {
+    & a, p  {
         position: relative;
         transform: none;
         transition: .5s all;

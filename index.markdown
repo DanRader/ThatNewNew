@@ -1,6 +1,7 @@
 ---
 title: Home
-layout: home
+layout: home-temp
+hide-nav: true
 ---
 
 # Dan Rader  is a digital creative in Washington DC.
