@@ -5,5 +5,6 @@ layout: about
 is-menu: true
 ---
 
-# Dan Rader  is a digital designer in Washington DC.
-He blends his skill in design, ux, and development to translate brand into digital experiences. With a background in music, Dan embraces empathy and communication to produce work with teams of talented humans.
+Dan Rader is a digital creative in Washington DC where he's currently Interactive Art Director at [ISL](isl.co). He blends his passion for design, ux, and development to translate brands into impactful digital experiences. With a background in music, Dan embraces empathy and communication to produce work with teams of talented humans.
+
+When he’s not designing, he can be found riding his bike, throwing pottery or tromping around DC with his wife [Maggie Germano](maggiegermano.com).

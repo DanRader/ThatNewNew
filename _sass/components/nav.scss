@@ -4,10 +4,11 @@
     position: absolute;
     width: 100%;
     left: 0;
-    z-index: 9999999;
     height: $nav-height;
+    z-index: 6;
+
     @media #{$media-max-s}{
-             height: calc(#{$nav-height} / 1.7);
+             height: calc(#{$nav-height} / 2);
     }
 }
 
@@ -21,11 +22,19 @@
         position: fixed;
         background-size: 100%;
     }
+
     & .bg-after {
         transition: 0.3s transform cubic-bezier(0.29, 0.43, 0.71, 0.68);
+        color: black;
     }
+
     & .bg-before {
         transition: 0.3s transform cubic-bezier(0, 0, 0.84, 0.56);
+        color: gray;
+    }
+
+    @media #{$media-max-s}{
+        grid-column: 1 / 13;
     }
 }
 
@@ -55,6 +64,7 @@ nav {
 .brand-logo  {
     width: 2rem;
     position: relative;
+    z-index: 1;
 
      @media #{$media-max-s}{
          width: 2rem;
@@ -119,7 +129,7 @@ nav {
         position: fixed;
         height: 100%;
         width: 100%;
-        z-index: -1;
+        z-index: 5;
         background-color: $prime-color;
         background-image: url(/uploads/noise.png);
         background-blend-mode: hard-light;
@@ -158,7 +168,7 @@ nav {
         width: 40px;
         height: 48px;
         cursor: pointer;
-        z-index: 999999;
+        z-index: 9;
         border-radius: 50%;
         display: flex;
         flex-direction: column;
@@ -195,15 +205,15 @@ nav {
             will-change: transform;
 
             &:nth-child(1) {
-                z-index: 3;
+                z-index: 9;
             }
             &:nth-child(2) {
                 width: 90%;
-                z-index: 2;
+                z-index: 8;
             }
             &:nth-child(3) {
                 width: 80%;
-                z-index: 1;
+                z-index: 7;
             }
         }
     }
@@ -231,7 +241,7 @@ nav {
 }
 
 #nav:checked ~ .nav-container {
-    z-index: 99999;
+    z-index: 5;
     transform: none;
 
     & ul {
@@ -256,45 +266,6 @@ nav {
       display: none;
 }
 
-form {
-    position: relative;
-    & input:focus {
-        outline: none;
-    }
-
-    & input.email {
-        width: 100%;
-        height: 50px;
-        border: none;
-        padding: 15px 75px 15px 15px;
-        box-sizing: border-box;
-        font-size: 14px;
-        font-weight: 200;
-
-        @media #{$media-max-s}{
-            height: 60px;
-            font-size: 17px;
-        }
-
-    }
-
-    & input.btn-submit {
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: red;
-        border: none;
-        background-image: url(/uploads/right-arrow.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        @media #{$media-max-s}{
-            width: 60px;
-            height: 60px;
-        }
-    }
-}
 
 p.sign-up {
     font-size: 12px;
@@ -312,12 +283,26 @@ p.sign-up {
 
 .nav-item {
     transform: none;
-    transition: .3s;
+    transition: .5s all;
     -webkit-text-stroke: 1px $second-color;
     text-stroke: 1px $second-color;
     color: transparent;
     &:hover {
         transform: translateX(4px);
         color: $second-color;
+    }
+}
+
+.nav-home {
+    & i {
+        background: $second-color;
+        opacity: .8;
+    }
+    &:hover i {
+        background: $second-color;
+        opacity: 1;
+    }
+    & svg g {
+        fill: $second-color;
     }
 }

@@ -1,0 +1,111 @@
+.home-wrap {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 188px;
+    background-color: $prime-color;
+    background-image: url(/uploads/noise.png);
+    background-blend-mode: hard-light;
+    background-size: contain;
+
+    & .home-innerWrap {
+        padding: 40px 0 140px;
+        z-index: 5;
+    }
+
+    @media #{$media-max-s} {
+        padding: 20px 0 80px;
+    }
+}
+
+.home-content {
+    grid-column: 2 / 12;
+    max-width: 792px;
+
+    & .medium {
+        line-height: 1.45;
+        color: $second-color;
+    }
+
+    @media #{$media-max-s} {
+        grid-column: 2 / 12;
+    }
+
+    & p {
+        opacity: .62;
+    }
+}
+
+.home-nav {
+    display: flex;
+    flex-direction: row;
+    grid-column: 2 / 12;
+    justify-content: space-between;
+    max-width: 355px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    margin-top: 40px;
+    color: $second-color;
+    font-weight: 100;
+
+    & a {
+        position: relative;
+        transform: none;
+        transition: .5s all;
+        will-change: transform;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            height: 2px;
+            background-color: $second-color;
+            width: 100%;
+            left: 0;
+            opacity: .6;
+            transform: none;
+            transition: .5s all;
+            will-change: transform;
+        }
+
+        &:hover {
+            transform: translateY(-3px);
+
+            &:after {
+                transform: translateY(3px) scaleY(1.35);
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.border-patrol {
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    &:before {
+        content: "";
+        border-top: 1px solid $second-color;
+        border-left: 1px solid $second-color;
+        width: 88%;
+        height: 80%;
+        position: absolute;
+        top: 24px;
+        left: 24px;
+    }
+
+    &:after{
+        content: "";
+        border-right: 1px solid $second-color;
+        border-bottom: 1px solid $second-color;
+        width: 88%;
+        height: 80%;
+        position: absolute;
+        bottom: 24px;
+        right: 24px;
+    }
+}
