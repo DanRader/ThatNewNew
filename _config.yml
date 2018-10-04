@@ -1,5 +1,5 @@
 ---
-title: Dan Rader Portfolio
+title: Dan Rader
 timezone: America/New_York
 collections:
   posts:
@@ -12,8 +12,12 @@ collections:
     title: Work
     output: true
 email: howdy@danrdesign.com
-description: replace me
-url: https://capitolciderhouse.com
+description: Dan Rader is a digital creative and designer in Washington DC where he’s
+  currently Interactive Art Director at ISL. He blends his passion for design, ux,
+  and development to translate brands into impactful digital experiences. With a background
+  in music, Dan embraces empathy and communication to produce work with teams of talented
+  humans
+url: https://danrdesign.com
 permalink: pretty
 social-media-image: 
 exclude:
