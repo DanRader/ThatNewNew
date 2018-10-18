@@ -1,13 +1,14 @@
 ---
 title: Pottery
-sub-title: Passion Project
 position: 3
+sub-title: Passion Project
 layout: pottery
 is-menu: true
-desc: Pottery is a passion project of mine. There's something amazing about molding a form from nothing and as an art-form, it's utilitarian nature makes a lot of sense to me.
-hero-image: /uploads/pottery3.jpg
+desc: Pottery is a passion project of mine. There's something amazing about molding
+  a form from nothing and as an art-form, it's utilitarian nature makes a lot of sense
+  to me.
+hero-image: "/uploads/pottery3.jpg"
 prime-color: "#BADBC9"
-
 ---
 
 {% include components/text-block.html
