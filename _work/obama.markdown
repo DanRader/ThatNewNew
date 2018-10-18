@@ -1,5 +1,6 @@
 ---
 title: The Obama Foundation
+published: false
 layout: work-item
 sub-title: My Brother's Keeper
 desc: "**Resettling in America is an uphill battle.** Sadipscing elitr, sed diam nonumy
@@ -13,7 +14,6 @@ collaborators:
 - Paul Best // UX Design
 - Samya Bahari // Product Management
 prime-color: "#BADBC9"
-published: false
 ---
 
 {% include components/images.html

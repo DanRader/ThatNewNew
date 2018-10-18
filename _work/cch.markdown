@@ -1,5 +1,6 @@
 ---
 title: Capitol Cider House
+position: 6
 layout: work-item
 sub-title: Rethinking Resettlement.
 desc: "**Resettling in America is an uphill battle.** Sadipscing elitr, sed diam nonumy
@@ -13,8 +14,7 @@ collaborators:
 - Paul Best // UX Design
 - Samya Bahari // Product Management
 prime-color: "#F0D6C5"
-external-link: "https://capitolciderhouse.com/"
-position: 6
+external-link: https://capitolciderhouse.com/
 ---
 
 {% include components/images.html

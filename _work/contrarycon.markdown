@@ -1,5 +1,6 @@
 ---
 title: Contrary Con
+position: 4
 layout: work-item
 sub-title: Rethinking Resettlement.
 desc: "**Resettling in America is an uphill battle.** Sadipscing elitr, sed diam nonumy
@@ -13,8 +14,7 @@ collaborators:
 - Paul Best // UX Design
 - Samya Bahari // Product Management
 prime-color: "#E4D7A4"
-external-link: "https://isl.co/case-studies/contrary-con/"
-position: 4
+external-link: https://isl.co/case-studies/contrary-con/
 ---
 
 {% include components/images.html
