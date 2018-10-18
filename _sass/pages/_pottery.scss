@@ -1,0 +1,44 @@
+.pottery-header {
+    position: relative;
+}
+.cert-wrap {
+    position: absolute;
+    width: 26% !important;
+    min-width: 170px;
+    height: auto;
+    top: 250px;
+    right: -27px;
+    display: flex;
+    justify-content: center;
+    @media #{$media-max-m} {
+        display: none;
+    }
+
+    & .cert-circle {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        animation-name: spinner;
+        animation-duration: 35s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        z-index: 1;
+    }
+    & .cert-cactus {
+        width: 40px;
+        margin: 22px;
+    }
+
+}
+
+@keyframes spinner {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

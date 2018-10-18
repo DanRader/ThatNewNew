@@ -1,5 +1,6 @@
 ---
 title: Accion
+position: 2
 layout: work-item
 sub-title: Rethinking Resettlement.
 desc: "**Resettling in America is an uphill battle.** Sadipscing elitr, sed diam nonumy
@@ -13,6 +14,7 @@ collaborators:
 - Paul Best // UX Design
 - Samya Bahari // Product Management
 prime-color: "#C7C5F0"
+external-link: https://www.accion.org/
 ---
 
 {% include components/images.html

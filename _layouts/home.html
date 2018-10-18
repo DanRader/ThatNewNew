@@ -5,17 +5,32 @@ layout: default
 <div class="home-wrap border-patrol">
     <div class="home-innerWrap grid ">
             <div class="home-content">
-                <h1 class="medium">Dan Rader  is a digital creative in Washington DC.</h1>
-                <p class="medium">He’s currently Interactive Art Director at <a href="https://isl.co/">ISL</a>, previously  Deloitte Digital, Social Driver, and Wolf Trap.</p>
+                <h1 class="medium">Dan Rader  is a digital creative in Washington&nbspDC.</h1>
+                <p class="medium">He’s currently Interactive Art Director at <a href="https://isl.co/">ISL</a>, previously <a href="https://www.deloittedigital.com/">Deloitte Digital</a>, Social Driver, and Wolf Trap.</p>
             </div>
             <div class="home-nav">
-                    {% assign sorted_navItem = site.pages | sort:"position" %}
-                    {% for navItem in sorted_navItem %}
-                        {% if navItem.is-menu == true %}
-                            <a href="{{ navItem.url }}" onclick='checkoff()'>{{ navItem.title | downcase }}</a>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
+                <a class="" href="https://www.linkedin.com/in/danarader/">Dan's CV</a>
+                <a class="" href="https://dribbble.com/DanRaderDesign">Dribbble</a>
+                <a class="" href="https://www.instagram.com/danrdesign/">Instagram</a>
             </div>
     </div>
+    <div class="floater-wrap">
+        <div class="shape-outerWrap">
+            <img class="shape-2" src="/uploads/shape-1.svg" alt="">
+        </div>
+        <div class="shape-outerWrap">
+            <img class="shape" src="/uploads/shape-2.svg" alt="">
+        </div>
+        <div class="shape-outerWrap">
+            <img class="shape" src="/uploads/shape-3.svg" alt="">
+        </div>
+        <div class="shape-outerWrap">
+            <img class="shape-2" src="/uploads/shape-4.svg" alt="">
+        </div>
+        <div class="shape-outerWrap">
+            <img class="shape-2" src="/uploads/shape-5.svg" alt="">
+        </div>
+        <div class="shape-outerWrap">
+            <img class="shape" src="/uploads/shape-6.svg" alt="">
+        </div>
 </div>

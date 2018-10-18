@@ -46,3 +46,49 @@ $(document).ready(function() {
 
     });
 });
+
+// weird mousey magic for the home page
+
+$(document).ready(function() {
+    var movementStrength = 60;
+    var height = movementStrength / $(window).height();
+    var width = movementStrength / $(window).width();
+
+
+
+    $(document).mousemove(function(e){
+        $(".shape").each(function(){
+             var y = $( this ).offset().top
+             var x = $( this ).offset().left
+             var pageX = e.pageX - x - ($(window).width() / 2) ;
+             var pageY = e.pageY - y - ($(window).height() / 3) ;
+             var newvalueX = width * pageX * 1 + 6;
+             var newvalueY = height * pageY * 1 + 3;
+             $( this ).css("transform",
+                // Y axis
+                "translateY("+newvalueY+"px)"+" translateX("+newvalueX+"px)" );
+      });
+    });
+});
+
+$(document).ready(function() {
+    var movementStrength = 80;
+    var height = movementStrength / $(window).height();
+    var width = movementStrength / $(window).width();
+
+
+
+    $(document).mousemove(function(e){
+        $(".shape-2").each(function(){
+             var y = $( this ).offset().top
+             var x = $( this ).offset().left
+             var pageX = e.pageX - x - ($(window).width() / 2) ;
+             var pageY = e.pageY - y - ($(window).height() / 3) ;
+             var newvalueX = width * pageX * 1 + 6;
+             var newvalueY = height * pageY * 1 + 3;
+             $( this ).css("transform",
+                // Y axis
+                "translateY("+newvalueY+"px)"+" translateX("+newvalueX+"px)" );
+      });
+    });
+});

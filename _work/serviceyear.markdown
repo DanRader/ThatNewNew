@@ -1,6 +1,6 @@
 ---
-title: Simple Roast
-published: false
+title: Service Year
+position: 3
 layout: work-item
 sub-title: Rethinking Resettlement.
 desc: "**Resettling in America is an uphill battle.** Sadipscing elitr, sed diam nonumy
@@ -13,7 +13,8 @@ collaborators:
 - Fernando Castro // Creative Director
 - Paul Best // UX Design
 - Samya Bahari // Product Management
-prime-color: "#BADBC9"
+prime-color: "#bfdde6"
+external-link: https://isl.co/case-studies/service-year/
 ---
 
 {% include components/images.html

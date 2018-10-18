@@ -6,7 +6,7 @@
             <a href="/" class="brand-logo {% if current contains 'home' %}nav-home{% endif %}">{% include svg/DanRader.svg %}</a>
             <input type="checkbox" id="nav" class="hidden"/>
             <label for="nav" class="nav-open {% if current contains 'home' %}nav-home{% endif %} {% if page.hide-nav == true' %}hidden{% endif %}"><i></i><i></i><i></i></label>
-              <div class="nav-container fixed top-0 right-0 p1 z2 flex flex-column">
+              <div class="nav-container fixed top-0 right-0 p1 z2 flex flex-column {% if current contains 'home' %}nav-home-bg{% endif %}">
                     <ul class="block list-reset">
                         {% assign sorted_navItem = site.pages | sort:"position" %}
                         {% for navItem in sorted_navItem %}

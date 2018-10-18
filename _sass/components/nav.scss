@@ -22,16 +22,17 @@
     & .related-bg-color {
         position: fixed;
         background-size: 100%;
+        transform: scaleY(0);
     }
 
     & .bg-after {
         transition: 0.3s transform cubic-bezier(0.29, 0.43, 0.71, 0.68);
-        color: black;
+        background-color: $second-color;
     }
 
     & .bg-before {
         transition: 0.3s transform cubic-bezier(0, 0, 0.84, 0.56);
-        color: gray;
+        background-color: #FFFAFA;
     }
 
     @media #{$media-max-s}{
@@ -137,7 +138,7 @@ nav {
         background-blend-mode: hard-light;
         background-size: contain;
         transform: translateY(100%);
-        transition: .4s all $fast-ramp;
+        transition: 0.55s all cubic-bezier(0.76, 0.01, 0.54, 0.98);
         padding: 7rem 9rem 6rem;
         box-sizing: border-box;
         justify-content: space-between;
@@ -147,7 +148,7 @@ nav {
             margin-left: 0;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: flex-end;
             height: 100%;
             width: 80%;
             transform: translateY(6rem);
@@ -289,6 +290,7 @@ p.sign-up {
     -webkit-text-stroke: 1px $second-color;
     text-stroke: 1px $second-color;
     color: transparent;
+    margin-bottom: $SMALL;
     &:hover {
         transform: translateX(4px);
         color: $second-color;
@@ -307,4 +309,8 @@ p.sign-up {
     & svg g {
         fill: $second-color;
     }
+}
+
+.nav-home-bg {
+    background-color: #484848;
 }

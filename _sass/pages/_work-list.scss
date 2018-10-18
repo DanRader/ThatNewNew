@@ -1,11 +1,13 @@
+.workList-wrap {
+    background-color: #fef6f6;
+}
+
 .list-header {
     & h1 {
         z-index: 1;
         position: relative;
     }
 }
-
-
 
 .marquee-wrap {
     position: absolute;
@@ -51,6 +53,7 @@
         top: calc(var(--ghost-type-height) * #{$i});
     }
 }
+
 
 
 @keyframes animatedText {

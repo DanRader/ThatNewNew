@@ -1,5 +1,6 @@
 ---
 title: Capital One
+published: false
 layout: work-item
 sub-title: Rethinking Resettlement.
 desc: "**Resettling in America is an uphill battle.** Sadipscing elitr, sed diam nonumy

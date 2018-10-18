@@ -1,20 +1,33 @@
 ---
-layout: list-page
+layout: default
 ---
 
-<div class="grid related-wrap mb-large">
-    {% for work in site.work %}
-    <a href="{{work.url}}" class="related-item ">
-        <div class="related-content">
-            <p class="label-l">0{{forloop.index}}</p>
-            <p class="medium">{{ work.title }}</p>
-            <p class="body-s">Check it out</p>
-            <div class="related-bg-color" style="background-color: {{ work.prime-color }}"></div>
-            <div class="related-bg-color bg-after"></div>
-            <div class="related-bg-color bg-before"></div>
-        </div>
-    </a>
-    {% endfor %}
-</div>
+<div class="workList-wrap">
+    {% include components/list-header.html %}
+    <div class="grid related-wrap mb-large">
+        {% assign work-sort = site.work | sort:"position" %}
+        {% for work in work-sort %}
+        {% if work.external-link %}
+            <a href="{{work.external-link}}" class="related-item ">
+        {% else %}
+            <a href="{{work.url}}" class="related-item ">
+        {% endif %}
+            <div class="related-content">
+                <p class="label-l">0{{forloop.index}}</p>
+                <p class="medium">{{ work.title }}</p>
+                <p class="body-s">Check it out</p>
+                <div class="related-bg-color" style="background-color: {{ work.prime-color }}"></div>
+                <div class="related-bg-color bg-after"></div>
+                <div class="related-bg-color bg-before"></div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
 
-{% include components/work-footer.html %}
+    <div class="textblock-wrap">
+        <h2 class="medium mt-xxlarge mb-xxlarge center">More work and case studies coming shortly!</h2>
+    </div>
+
+    {% include components/work-footer.html %}
+
+</div>

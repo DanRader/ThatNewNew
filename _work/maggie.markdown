@@ -1,5 +1,6 @@
 ---
 title: Financial Coaching for Women
+position: 5
 layout: work-item
 sub-title: Rethinking Resettlement.
 desc: "**Resettling in America is an uphill battle.** Sadipscing elitr, sed diam nonumy
@@ -12,7 +13,8 @@ collaborators:
 - Fernando Castro // Creative Director
 - Paul Best // UX Design
 - Samya Bahari // Product Management
-prime-color: "#FFE8E8"
+prime-color: "#c1cdc1"
+external-link: https://www.maggiegermano.com/
 ---
 
 {% include components/images.html
