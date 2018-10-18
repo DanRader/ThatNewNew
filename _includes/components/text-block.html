@@ -1,7 +1,7 @@
 
 <!-- there is logic here to change the column layout if there is a subtitle -->
 <div class="textblock-wrap">
-    <div class="mb-xxlarge grid text-block {% if include.sub-title %}textWithSub{% endif %}">
+    <div class="mb-xxlarge mt-xxlarge grid text-block {% if include.sub-title %}textWithSub{% endif %}">
         <div class="textBlock-title">
             <h2 class="medium"><span>{{ include.title }}</span> {{ include.sub-title }}</h2>
         </div>
@@ -9,5 +9,7 @@
             {{ include.content | markdownify}}
         </div>
     </div>
-    <p class="jumbo ghost-type">{{ include.title }}</p>
+    {% if include.highlight %}
+        <p class="jumbo ghost-type">{{ include.highlight }}</p>
+    {% endif%}
 </div>

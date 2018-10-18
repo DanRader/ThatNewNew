@@ -54,6 +54,9 @@ $XXLARGE: 112px;
 }
 .mt-xxlarge {
     margin-top: $XXLARGE;
+    @media #{$media-max-m}{
+        margin-top: $LARGE;
+    }
 }
 
 

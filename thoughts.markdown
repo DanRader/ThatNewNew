@@ -1,7 +1,6 @@
 ---
 title: Thought
 position: 2
-is-menu: true
+is-menu: false
 layout: thoughts
 ---
-

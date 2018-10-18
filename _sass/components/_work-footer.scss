@@ -1,6 +1,6 @@
 .footer_outerwrap {
     background-color: $dark-blush;
-    border: 32px solid $blush;
+    margin: 32px;
     background-image: url(/uploads/headshot_ext.jpg);
     background-blend-mode: overlay;
     background-position: 80% 50%;
@@ -21,7 +21,7 @@
     }
 
     @media #{$media-max-m}{
-        border: 16px solid $blush;
+        margin: 16px;
     }
 }
 

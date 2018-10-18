@@ -13,6 +13,8 @@ collaborators:
 - Paul Best // UX Design
 - Samya Bahari // Product Management
 prime-color: "#F0D6C5"
+external-link: "https://capitolciderhouse.com/"
+position: 6
 ---
 
 {% include components/images.html

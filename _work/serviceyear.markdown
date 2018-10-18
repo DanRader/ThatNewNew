@@ -1,5 +1,5 @@
 ---
-title: Capital One
+title: Service Year
 layout: work-item
 sub-title: Rethinking Resettlement.
 desc: "**Resettling in America is an uphill battle.** Sadipscing elitr, sed diam nonumy
@@ -12,8 +12,9 @@ collaborators:
 - Fernando Castro // Creative Director
 - Paul Best // UX Design
 - Samya Bahari // Product Management
-prime-color: "#C5EBF0"
-published: false
+prime-color: "#bfdde6"
+external-link: "https://isl.co/case-studies/service-year/"
+position: 3
 ---
 
 {% include components/images.html

@@ -13,6 +13,8 @@ collaborators:
 - Paul Best // UX Design
 - Samya Bahari // Product Management
 prime-color: "#BADBC9"
+external-link: "https://isl.co/case-studies/resettlement-app/"
+position: 1
 ---
 
 {% include components/images.html

@@ -12,7 +12,9 @@ collaborators:
 - Fernando Castro // Creative Director
 - Paul Best // UX Design
 - Samya Bahari // Product Management
-prime-color: "#FFE8E8"
+prime-color: "#c1cdc1"
+external-link: "https://www.maggiegermano.com/"
+position: 5
 ---
 
 {% include components/images.html

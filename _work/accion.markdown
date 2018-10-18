@@ -13,6 +13,8 @@ collaborators:
 - Paul Best // UX Design
 - Samya Bahari // Product Management
 prime-color: "#C7C5F0"
+external-link: "https://www.accion.org/"
+position: 2
 ---
 
 {% include components/images.html

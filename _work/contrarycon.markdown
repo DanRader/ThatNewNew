@@ -13,6 +13,8 @@ collaborators:
 - Paul Best // UX Design
 - Samya Bahari // Product Management
 prime-color: "#E4D7A4"
+external-link: "https://isl.co/case-studies/contrary-con/"
+position: 4
 ---
 
 {% include components/images.html

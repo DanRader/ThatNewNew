@@ -1,22 +1,31 @@
 {% if include.img-2 %}
-<div class="mb-xxlarge grid grid-twoUp imageWrapper">
-        <img src="{{ include.img-1 }}" alt="{{ include.alt-1 }}">
-        <img src="{{ include.img-2 }}" alt="{{ include.alt-2 }}">
+<div class="mb-medium grid grid-twoUp imageWrapper">
+    <div class="">
+        <img src="{{ include.img-1 }}"
+        {% if include.position-1 %}
+            style="object-position: {{ include.position-1 }}"
+        {% endif %}
+        alt="{{ include.alt-1 }}">
+    </div>
+    <div class="">
+        <img src="{{ include.img-2 }}"
+        {% if include.position-2 %}
+            style="object-position: {{ include.position-2 }}"
+        {% endif %}
+        alt="{{ include.alt-2 }}">
+    </div>
 </div>
-
-{% comment %} {% else-if include.img-3 %} {% endcomment %}
-<!-- <div class="grid grid-twoUp imageWrapper">
-        <img src="{{ include.img-1 }}" alt="{{ include.alt-1 }}">
-        <img src="{{ include.img-2 }}" alt="{{ include.alt-2 }}">
-</div>
-<div class="mb-xxlarge grid grid-oneUp imageWrapper">
-        <img src="{{ include.img-3 }}" alt="{{ include.alt-3 }}">
-</div> -->
 
 {% else %}
 
-<div class="mb-xxlarge grid grid-oneUp imageWrapper">
-        <img src="{{ include.img-1 }}" alt="{{ include.alt-1 }}">
+<div class="mb-medium grid grid-oneUp imageWrapper">
+    <div class="">
+        <img src="{{ include.img-1 }}"
+        {% if include.position %}
+            style="object-position: {{ include.position }}"
+        {% endif %}
+        alt="{{ include.alt-1 }}">
+    </div>
 </div>
 
 {% endif %}

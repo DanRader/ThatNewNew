@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<!-- <div class="clear-nav pottery-header">
+    <div class="mb-xxlarge">
+        <h1 class="jumbo center">{{ page.title }}</h1>
+        <div class="marquee-wrap">
+            {% capture title-repeat %}
+                    {% for i in (1..7) %}
+                        {{ page.title }}
+                    {% endfor %}
+            {% endcapture%}
+            {% for i in (1..5) %}
+                <p class="jumbo ghost-type">{{ title-repeat | strip_newlines | strip }}</p>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="image-alpha"></div>
+</div> -->
+
+<!-- Assign page color -->
+<style media="screen">
+    body{
+        --prime-color: {{ page.prime-color }}
+    }
+</style>
+
+<!-- hero header -->
+
+<div class="color-bg"></div>
+<div class="grid">
+    <div class="work-hero mb-xxlarge pottery-header">
+        <h1 class="jumbo work-title">{{ page.title }}</h1>
+        <div class="cert-wrap">
+            <img class="cert-circle" src="/uploads/cert.svg" alt="Certified Passion Project">
+            <img class="cert-cactus" src="/uploads/cactus.svg" alt="Certified Passion Project">
+        </div>
+        <!-- <img class="cert-ribbon" src="/uploads/ribbon.svg" alt="Certified Passion Project"> -->
+    </div>
+</div>
+
+<div class="full-width-img mb-xxlarge">
+    <img src="{{ page.hero-image }}" alt="{{ page.title }}-hero">
+</div>
+
+<!-- loop through content -->
+
+<div class="work-contentWrap">
+    {{ content }}
+</div>
+
+{% include components/work-footer.html %}
