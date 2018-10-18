@@ -27,7 +27,7 @@ prime-color: "#BADBC9"
 {% include components/text-block.html
     title="Form"
     highlight="Form"
-    content="I tend to gravitate towards simple, straight forward, and sometimes geometric forms. I'm working to draw a line between useful utilitarian forms and beautiful, contemporary shapes."
+    content="I tend to gravitate towards simple, straight forward, and sometimes geometric forms. I'm working to draw a line between useful forms and beautiful, contemporary shapes."
 %}
 
 {% include components/images.html
@@ -42,8 +42,8 @@ prime-color: "#BADBC9"
 %}
 
 {% include components/text-block.html
-    title="Insperation"
-    highlight="Insperation"
+    title="Inspiration"
+    highlight="Inspiration"
     content="I've been slightly obsessed with ceramics for some time now. Often picking up plates and bowls and feeling a strong connection to them. I've always loved the feeling of using a pot that feels handmade and thoughtful.  "
 %}
 
