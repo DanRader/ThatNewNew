@@ -7,7 +7,7 @@ is-menu: true
 desc: Pottery is a passion project of mine. There's something amazing about molding
   a form from nothing and as an art-form, it's utilitarian nature makes a lot of sense
   to me.
-hero-image: "/uploads/pottery3.jpg"
+hero-image: "/uploads/pottery11-2.jpg"
 prime-color: "#BADBC9"
 ---
 
@@ -39,6 +39,7 @@ prime-color: "#BADBC9"
 {% include components/images.html
     img-1="/uploads/pottery7.jpg"
     alt-1="Corger Number One"
+    position="left"
 %}
 
 {% include components/text-block.html
@@ -48,8 +49,9 @@ prime-color: "#BADBC9"
 %}
 
 {% include components/images.html
-    img-1="/uploads/pottery5-2.jpg"
+    img-1="/uploads/pottery9.jpg"
     alt-1="Corger Number One"
+    position-1="bottom"
     img-2="/uploads/pottery5.jpg"
     alt-2="Corger Number One"
 %}
