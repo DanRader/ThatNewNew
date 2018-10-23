@@ -126,7 +126,7 @@
 }
 
 .bg-before {
-    transition: .3s transform ease-out;
+    transition: 0.3s transform cubic-bezier(0, 0, 0.96, 0.02);
     z-index: 1;
     background-color: #ECECEC;
 }

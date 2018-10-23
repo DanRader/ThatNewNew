@@ -42,6 +42,9 @@ $XXLARGE: 112px;
 }
 .mt-normal {
     margin-top: $NORMAL;
+    @media #{$media-max-s}{
+        margin-top: $TINY;
+    }
 }
 .mt-medium {
     margin-top: $MEDIUM;

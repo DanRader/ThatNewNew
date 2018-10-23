@@ -54,7 +54,7 @@
 
     @media #{$media-max-s}{
         padding: 60px 0 0;
-        padding-bottom: $NORMAL;
+        padding-bottom: $MEDIUM;
     }
 
 }
@@ -65,7 +65,7 @@
     max-width: 600px;
 
     @media #{$media-max-s}{
-        grid-column: 2 / 13;
+        grid-column: 1 / 13;
     }
 
     .large {
@@ -127,7 +127,6 @@
    }
 
 .about-linkrow {
-    margin-bottom: $NORMAL;
 
     & .label {
         margin-right: 24px;
@@ -135,6 +134,10 @@
         display: inline-block;
         transform: none;
         transition: .3s all;
+
+        @media #{$media-max-s}{
+            margin-right: 12px;
+        }
 
         &:after {
             content: "";
@@ -161,6 +164,11 @@
 
         &:last-child{
             margin-right: 0;
+        }
+    }
+    & span {
+        @media #{$media-max-s}{
+            display: none;
         }
     }
 }

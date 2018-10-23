@@ -7,7 +7,7 @@
     z-index: 1;
 
     @media #{$media-max-s}{
-        padding-top: 168px;
+        padding-top: 175px;
     }
 }
 
@@ -27,8 +27,9 @@
     border: 32px solid $blush;
 
     @media #{$media-max-m}{
-        border: 16px solid $blush;
+        border: 8px solid $blush;
     }
+
     @media #{$media-max-s}{
         height: 230px;
     }
