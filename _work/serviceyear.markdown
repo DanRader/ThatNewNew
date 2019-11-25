@@ -1,7 +1,7 @@
 ---
 title: Service Year
-position: 3
 published: false
+position: 3
 layout: work-item
 sub-title: Rethinking Resettlement.
 desc: "**Resettling in America is an uphill battle.** Sadipscing elitr, sed diam nonumy
