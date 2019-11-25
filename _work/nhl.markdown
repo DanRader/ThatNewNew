@@ -1,8 +1,8 @@
 ---
-title: Contrary Con
-position: 6
+title: NHL
+position: 4
 layout: work-item
-sub-title: Rethinking Resettlement.
+sub-title: Multimodal Touch
 desc: "**Resettling in America is an uphill battle.** Sadipscing elitr, sed diam nonumy
   eirmod tempor invidunt ut labore"
 hero-image: "/uploads/ios-banner.jpg"
@@ -13,8 +13,8 @@ collaborators:
 - Fernando Castro // Creative Director
 - Paul Best // UX Design
 - Samya Bahari // Product Management
-prime-color: "#E4D7A4"
-external-link: https://contrarycon.com/
+prime-color: "#C7C5F0"
+external-link: https://isl.co/case-studies/nhl-multi-modal-alexa-skill/
 ---
 
 {% include components/images.html

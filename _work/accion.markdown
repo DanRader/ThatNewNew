@@ -14,7 +14,7 @@ collaborators:
 - Paul Best // UX Design
 - Samya Bahari // Product Management
 prime-color: "#C7C5F0"
-external-link: https://www.accion.org/
+external-link: https://isl.co/case-studies/accion-platform-redesign/
 ---
 
 {% include components/images.html

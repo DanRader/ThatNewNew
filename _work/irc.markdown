@@ -1,5 +1,5 @@
 ---
-title: Settle In
+title: International Rescue Committee
 position: 1
 layout: work-item
 sub-title: Rethinking Resettlement.

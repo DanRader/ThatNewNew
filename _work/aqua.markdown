@@ -1,8 +1,8 @@
 ---
-title: Contrary Con
-position: 6
+title: National Aquarium
+position: 92
 layout: work-item
-sub-title: Rethinking Resettlement.
+sub-title: My Brother's Keeper
 desc: "**Resettling in America is an uphill battle.** Sadipscing elitr, sed diam nonumy
   eirmod tempor invidunt ut labore"
 hero-image: "/uploads/ios-banner.jpg"
@@ -13,8 +13,9 @@ collaborators:
 - Fernando Castro // Creative Director
 - Paul Best // UX Design
 - Samya Bahari // Product Management
-prime-color: "#E4D7A4"
-external-link: https://contrarycon.com/
+prime-color: "#BADBC9"
+coming-soon: true
+external-link: "#"
 ---
 
 {% include components/images.html

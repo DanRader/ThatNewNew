@@ -1,6 +1,6 @@
 ---
 title: Capital One
-published: false
+position: 3
 layout: work-item
 sub-title: Rethinking Resettlement.
 desc: "**Resettling in America is an uphill battle.** Sadipscing elitr, sed diam nonumy
@@ -14,6 +14,7 @@ collaborators:
 - Paul Best // UX Design
 - Samya Bahari // Product Management
 prime-color: "#C5EBF0"
+external-link: https://isl.co/case-studies/capital-one-interactive/
 ---
 
 {% include components/images.html
