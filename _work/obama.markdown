@@ -1,6 +1,6 @@
 ---
 title: The Obama Foundation
-published: false
+position: 91
 layout: work-item
 sub-title: My Brother's Keeper
 desc: "**Resettling in America is an uphill battle.** Sadipscing elitr, sed diam nonumy
@@ -13,7 +13,9 @@ collaborators:
 - Fernando Castro // Creative Director
 - Paul Best // UX Design
 - Samya Bahari // Product Management
-prime-color: "#BADBC9"
+prime-color: "#C5EBF0"
+coming-soon: true
+external-link: "#"
 ---
 
 {% include components/images.html

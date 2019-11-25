@@ -1,6 +1,6 @@
 ---
 title: Capitol Cider House
-position: 6
+position: 5
 layout: work-item
 sub-title: Rethinking Resettlement.
 desc: "**Resettling in America is an uphill battle.** Sadipscing elitr, sed diam nonumy

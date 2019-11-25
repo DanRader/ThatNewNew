@@ -12,7 +12,7 @@ layout: default
         {% else %}
             <a href="{{work.url}}" class="related-item ">
         {% endif %}
-            <div class="related-content">
+            <div class="related-content {% if work.coming-soon %}comingSoon{% endif %}">
                 <p class="label-l">0{{forloop.index}}</p>
                 <p class="medium">{{ work.title }}</p>
                 <p class="body-s">Check it out</p>
