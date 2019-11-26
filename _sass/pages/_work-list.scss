@@ -10,29 +10,28 @@
 }
 
 .marquee-wrap {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
-    top: -333px;
+    top: -373px;
     left: -40px;
     z-index: 0;
-    transform: rotate(-27deg);
+    transform: rotate(-20deg);
     transition: .3s all;
 
     --ghost-type-height: 160px;
 
     & p {
         top: 0;
-        left: 0;
         width: 100%;
         height: var(--ghost-type-height);
         white-space: nowrap;
         animation: animatedText 42s linear infinite;
+        left: auto;
 
         @media #{$media-max-s}{
             animation: animatedText-small 15s linear infinite;
             top: 0px;
-            left: 0px;
             }
     }
 
@@ -70,6 +69,7 @@
 @for $i from 1 through 8 {
     .marquee-wrap p:nth-child(#{$i}) {
         top: calc(var(--ghost-type-height) * #{$i});
+        right: calc((var(--ghost-type-height) * #{$i}) * 0.8)
     }
 }
 
