@@ -15,3 +15,31 @@ $fast-ramp: cubic-bezier(0.65, 0.02, 0.56, 0.87);
             transform: translateX(calc(var(--yu)/2));
     }
 }
+
+svg .big-d {
+    transform: rotate3d(0, 1, 0, 0deg);
+    transform-origin: 33.33% 50%;
+    transition: .33s all ease-out;
+}
+
+svg .lil-d {
+    transform: rotate3d(0, 1, 0, 0deg);
+    transform-origin: 33.33% 50%;
+    transition: .57s all;
+}
+
+
+.brand-logo {
+    svg {
+        overflow: visible;
+    }
+    :hover {
+        .big-d {
+            transform: rotate3d(0, 1, 0, 360deg);
+        }
+        .lil-d {
+            transform: rotate3d(0, 1, 0, 360deg);
+            transform-origin: 33.33% 50%;
+        }
+    }
+}
