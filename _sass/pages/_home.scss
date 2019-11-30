@@ -15,9 +15,10 @@
     & .home-innerWrap {
         padding: 15px 0 70px;
         z-index: 5;
+        height: auto;
 
         @media #{$media-max-s} {
-            padding: 120px 0 120px;
+            padding: 120px 0 90px;
         }
     }
 }
