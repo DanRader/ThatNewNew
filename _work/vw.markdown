@@ -2,70 +2,81 @@
 title: Volkswagen
 position: 93
 layout: work-item
-sub-title: My Brother's Keeper
-desc: "**Resettling in America is an uphill battle.** Sadipscing elitr, sed diam nonumy
-  eirmod tempor invidunt ut labore"
-hero-image: "/uploads/ios-banner.jpg"
-client: IRC—International Rescue Commitee
-role: Design, Art Direction, Development
+sub-title: Rethinking the car buying process
+
+desc: "**VW came to us to rethink the car buying process.** We worked to ditch the pain of going to a dealer and offer a fully digital car buying experience. Later, it was applied to accompany the launch of VW's new fully electric vehicles."
+hero-image: "/uploads/vw/hero.jpg"
+client: Volkswagon
+role: Creative Direction, Design, Product Direction
 collaborators:
 - Created at [ISL](https://isl.co/)
-- Fernando Castro // Creative Director
-- Paul Best // UX Design
-- Samya Bahari // Product Management
-prime-color: "#E4D7A4"
+- Maggie Chambers // Design
+- Scott Simpson // Design
+- Caresse Gilles // Product Management
+- Wunderman Thompson // Creative Partners
+- VW Team // Product Owners and UX designers
+prime-color: "#a5bae4"
 coming-soon: true
-external-link: "#"
+
 ---
 
-{% include components/images.html
-    img-1="/uploads/sample_2.jpg"
-    alt-1="Corger Number One"
-    img-2="/uploads/Rectangle 2.png"
-    alt-2="Secong Corgmuffin"
-%}
+<img class="padded-image" src="/uploads/vw/MogoHighlight.jpg">
+
+<!-- <video class="inlineVideo" autoplay>
+    <source src="/uploads/vw/VW_Master_Prototype-vdp2.mp4" type="video/mp4">
+</video> -->
 
 {% include components/text-block.html
-    title="Lorem ipsum dolor sit amet, consetetur"
-    sub-title="sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
-    content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    title="Part One: We were there at the beginning.  "
+    sub-title="Product prototyping a brand new experience for VW."
+    content="We worked with VW to build the concept from the ground up. In its initial phase, we focused on the selling of previously leased VWs and Audis. We identified existing car-buying journeys and how our product could best intersect, translated the VW group brand—to include VW, Audi, And Porsche—into distinct style directions, and built testable prototypes to test our assumptions."
 %}
 
 {% include components/images.html
-    img-1="/uploads/sample_4.jpg"
-    alt-1="Corger Number One"
+    img-1="/uploads/vw/UserResearch.jpg"
+    alt-1="User Research in Philly"
+    img-2="/uploads/vw/JourneyPhoto.jpg"
+    alt-2="VW clients working with us to identify a user journey"
 %}
+
+<img class="padded-image" src="/uploads/vw/Journey.jpg">
+
+<img class="padded-image" src="/uploads/vw/designdirections.jpg">
+
+<img class="fullWidth-image" src="/uploads/vw/comps.jpg">
+
+<video class="inlineVideo" autoplay controls loop>
+    <source src="/uploads/vw/selectiontrimdown4_dowsized.mp4" type="video/mp4">
+</video>
+
 
 {% include components/text-block.html
-    title="Branding"
-    content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    title="Part Two: We must have done something right."
+    sub-title="The work was picked up and translated to support in VW's electric vehicle launch."
+    content="To accompany the launch of the upcoming electric vehicle line, we worked with VW to take this initial concept and craft the experience to support 3 main experiences along an end-to-end costomer experience. We worked to support reservations prior to vehicle production, crafted an experience to keep reservation-holders engaged through progress and key interaction points, and brought the dealership to the consumer through an entirely online buying experience."
 %}
 
-{% include components/images.html
-    img-1="/uploads/sample_1.jpg"
-    alt-1="Corger Number One"
-    img-2="/uploads/sample_3.jpg"
-    alt-2="Secong Corgmuffin"
-    img-3="/uploads/corger.jpg"
-    alt-3="Corger Number One"
+<img class="fullWidth-image" src="/uploads/vw/CW5comps1.jpg">
+<img class="fullWidth-image" src="/uploads/vw/CW5comps2.jpg">
+<img class="padded-image" src="/uploads/vw/CW5comps3.jpg">
+
+{% include components/text-block.html
+    title="Many Teams."
+    sub-title="One End-to-End Customer Experience."
+    content="One of the biggest challenges for this work was to bring stability and a singular creative approach across multiple teams. The teams spanned across VW and Audi, ISL and Wunderman Thompson, to create one serious nest of talented humans. I created and maintained a design system that interprets a new VW brand direction, oversaw the interaction design with multiple teams of designers, and worked closely with multiple product owners and a release train engineer to ensure a delivery and review schedule that facilitated stakeholder feedback and set the developer teams up for success."
 %}
+
+<img class="padded-image" src="/uploads/vw/flow.jpg">
+
+{% include components/text-block.html
+    title="Creating a unified creative approach"
+    sub-title="A style guide to anticipate the launch of VW's new brand system."
+    content="We created a design system to ensure creative consistency and  successfully adapt VW's new brand direction. We worked to build a system that was simple and thorough enough for designers to apply consistently and systematic enough for developers to be able to translate."
+%}
+
+<img class="padded-image" src="/uploads/vw/designsystem.jpg">
 
 {% include components/big-statement.html
-    statement="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-    attribution="Carla Johnson"
-%}
-
-{% include components/images.html
-    img-1="/uploads/sample_5.jpg"
-    alt-1="Corger Number One"
-%}
-
-{% include components/text-block.html
-    title="Uncovering the Truth"
-    content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-%}
-
-{% include components/images.html
-    img-1="/uploads/sample_6.jpg"
-    alt-1="Corger Number One"
+    statement="The team was incredibly flexible throughout and brought an amazing energy, enthusiasm, and expertise to the table each day. As I’m sure you’ve seen, the work speaks for itself… but I wanted to go on record with a HUGE THANKS! to you and the team."
+    attribution="Caleb Dunn, Customer Experience Lead — VW Mobility Team"
 %}
