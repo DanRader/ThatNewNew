@@ -17,6 +17,7 @@ collaborators:
 - VW Team // Product Owners and UX designers
 prime-color: "#a5bae4"
 coming-soon: true
+external-link: "#"
 
 ---
 
@@ -80,3 +81,5 @@ coming-soon: true
     statement="The team was incredibly flexible throughout and brought an amazing energy, enthusiasm, and expertise to the table each day. As I’m sure you’ve seen, the work speaks for itself… but I wanted to go on record with a HUGE THANKS! to you and the team."
     attribution="Caleb Dunn, Customer Experience Lead — VW Mobility Team"
 %}
+
+<!-- {% include components/pwProtect.html %} -->
