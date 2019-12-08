@@ -42,9 +42,50 @@
     grid-template-columns: repeat(1, 1fr);
 }
 
-.work-contentWrap {
-    //  THIS IS A BANDADE FIX
-    p > img {
-        height: 100vh;
+// .work-contentWrap {
+//     //  THIS IS A BANDADE FIX
+//     p > img {
+//         height: 100vh;
+//     }
+// }
+
+.inlineVideo {
+    padding: 24px 0;
+    width: 100%;
+
+    &:focus {
+        outline: none;
     }
+}
+
+.paddedVideo {
+    padding: 24px 40px;
+    width: 100%;
+    @media #{$media-max-m}{
+        padding: 24px 24px;
+    }
+     @media #{$media-max-s}{
+         padding: 24px 16px;
+     }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.fullWidth-image {
+    width: 100%;
+    height: auto;
+    padding: 24px 0;
+}
+
+.padded-image {
+    width: 100%;
+    padding: 24px 40px;
+    @media #{$media-max-m}{
+        padding: 0 24px;
+    }
+     @media #{$media-max-s}{
+         padding: 0 16px;
+     }
 }
