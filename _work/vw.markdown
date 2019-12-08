@@ -47,7 +47,7 @@ external-link: "#"
 
 <img class="fullWidth-image" src="/uploads/vw/comps.jpg">
 
-<video class="inlineVideo" autoplay controls loop>
+<video class="inlineVideo" autoplay controls loop muted>
     <source src="/uploads/vw/selectiontrimdown4_dowsized.mp4" type="video/mp4">
 </video>
 
