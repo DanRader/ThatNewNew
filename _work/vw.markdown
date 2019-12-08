@@ -19,7 +19,6 @@ collaborators:
 prime-color: "#a5bae4"
 coming-soon: true
 external-link: "#"
-
 ---
 
 <img class="padded-image" src="/uploads/vw/MogoHighlight.jpg">
