@@ -3,8 +3,9 @@ title: Volkswagen
 position: 93
 layout: work-item
 sub-title: Rethinking the car buying process
-
-desc: "**VW came to us to rethink the car buying process.** We worked to ditch the pain of going to a dealer and offer a fully digital car buying experience. Later, it was applied to accompany the launch of VW's new fully electric vehicles."
+desc: "**VW came to us to rethink the car buying process.** We worked to ditch the
+  pain of going to a dealer and offer a fully digital car buying experience. Later,
+  it was applied to accompany the launch of VW's new fully electric vehicles."
 hero-image: "/uploads/vw/hero.jpg"
 client: Volkswagon
 role: Creative Direction, Design, Product Direction
@@ -17,7 +18,6 @@ collaborators:
 - VW Team // Product Owners and UX designers
 prime-color: "#a5bae4"
 coming-soon: true
-
 ---
 
 <img class="padded-image" src="/uploads/vw/MogoHighlight.jpg">
