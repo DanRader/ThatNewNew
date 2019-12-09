@@ -29,8 +29,8 @@ external-link: "#"
 
 {% include components/text-block.html
     title="Part One: We were there at the beginning.  "
-    sub-title="Product prototyping a brand new experience for VW."
-    content="We worked with VW to build the concept from the ground up. In its initial phase, we focused on the selling of previously leased VWs and Audis. We identified existing car-buying journeys and how our product could best intersect, translated the VW group brand—to include VW, Audi, And Porsche—into distinct style directions, and built testable prototypes to test our assumptions."
+    sub-title="Prototyping a brand new product experience for VW."
+    content="We worked with VW to build the concept from the ground up. In its initial phase, we focused on the selling of previously leased VWs and Audis. We identified existing car buying journeys and how our product could best alleviate points of friction, translated the VW group brand (including VW, Audi, And Porsche) into distinct style directions, and built prototypes and journeys to test our assumptions."
 %}
 
 {% include components/images.html
@@ -46,7 +46,7 @@ external-link: "#"
 
 <img class="fullWidth-image" src="/uploads/vw/comps.jpg">
 
-<video class="inlineVideo" autoplay controls loop muted>
+<video class="paddedVideo" autoplay controls loop muted>
     <source src="/uploads/vw/selectiontrimdown4_dowsized.mp4" type="video/mp4">
 </video>
 
@@ -54,7 +54,7 @@ external-link: "#"
 {% include components/text-block.html
     title="Part Two: We must have done something right."
     sub-title="The work was picked up and translated to support in VW's electric vehicle launch."
-    content="To accompany the launch of the upcoming electric vehicle line, we worked with VW to take this initial concept and craft the experience to support 3 main experiences along an end-to-end costomer experience. We worked to support reservations prior to vehicle production, crafted an experience to keep reservation-holders engaged through progress and key interaction points, and brought the dealership to the consumer through an entirely online buying experience."
+    content="To accompany the launch of the upcoming electric vehicle line, we worked with VW to take this initial concept and craft the experience to support three main experiences along an end-to-end customer experience. We worked to support reservations prior to vehicle production, crafted an experience to keep reservation-holders engaged through progress and key interaction points, and brought the dealership to the consumer through an entirely online buying experience."
 %}
 
 <img class="fullWidth-image" src="/uploads/vw/CW5comps1.jpg">
@@ -63,14 +63,14 @@ external-link: "#"
 
 {% include components/text-block.html
     title="Many Teams."
-    sub-title="One End-to-End Customer Experience."
-    content="One of the biggest challenges for this work was to bring stability and a singular creative approach across multiple teams. The teams spanned across VW and Audi, ISL and Wunderman Thompson, to create one serious nest of talented humans. I created and maintained a design system that interprets a new VW brand direction, oversaw the interaction design with multiple teams of designers, and worked closely with multiple product owners and a release train engineer to ensure a delivery and review schedule that facilitated stakeholder feedback and set the developer teams up for success."
+    sub-title="One end-to-end customer experience."
+    content="One of the biggest challenges for this work was to bring stability and a singular creative approach across multiple teams. The teams spanned across VW/Audi client teams and ISL/Wunderman Thompson agency teams, to create one serious nest of talented humans. I created and maintained a design system that interprets a new VW brand direction, oversaw the interaction design with multiple teams of designers, and worked closely with multiple product owners and a release train engineer to ensure a delivery and review schedule that facilitated stakeholder feedback and set the developer teams up for success."
 %}
 
 <img class="padded-image" src="/uploads/vw/flow.jpg">
 
 {% include components/text-block.html
-    title="Creating a unified creative approach"
+    title="Creating a unified creative approach."
     sub-title="A style guide to anticipate the launch of VW's new brand system."
     content="We created a design system to ensure creative consistency and  successfully adapt VW's new brand direction. We worked to build a system that was simple and thorough enough for designers to apply consistently and systematic enough for developers to be able to translate."
 %}
