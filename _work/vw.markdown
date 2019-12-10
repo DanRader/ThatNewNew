@@ -21,11 +21,13 @@ coming-soon: true
 external-link: "#"
 ---
 
-<img class="padded-image" src="/uploads/vw/MogoHighlight.jpg">
 
-<!-- <video class="inlineVideo" autoplay>
-    <source src="/uploads/vw/VW_Master_Prototype-vdp2.mp4" type="video/mp4">
-</video> -->
+<figure class="paddedVideo">
+    <video autoplay controls loop muted>
+        <source src="/uploads/vw/MogoHome.mp4" type="video/mp4">
+    </video>
+  <figcaption>✏️ Our initial solution focused on matching existing inventory with user's ideal car build to create an experience that matched the excitement of going to the dealer </figcaption>
+</figure>
 
 {% include components/text-block.html
     title="Part One: We were there at the beginning.  "
@@ -57,9 +59,21 @@ external-link: "#"
     content="To accompany the launch of the upcoming electric vehicle line, we worked with VW to take this initial concept and craft the experience to support three main experiences along an end-to-end customer experience. We worked to support reservations prior to vehicle production, crafted an experience to keep reservation-holders engaged through progress and key interaction points, and brought the dealership to the consumer through an entirely online buying experience."
 %}
 
-<img class="fullWidth-image" src="/uploads/vw/CW5comps1.jpg">
+<!-- <img class="fullWidth-image" src="/uploads/vw/CW5comps1.jpg"> -->
+<!-- <img class="fullWidth-image" src="/uploads/vw/CW5comps2.jpg"> -->
+<!-- <img class="padded-image" src="/uploads/vw/CW5comps3.jpg"> -->
+
+<video class="inlineVideo" autoplay controls loop muted>
+    <source src="/uploads/vw/config.mp4" type="video/mp4">
+</video>
+<!-- <video class="inlineVideo" autoplay controls loop muted>
+    <source src="/uploads/vw/oiw.mp4" type="video/mp4">
+</video> -->
 <img class="fullWidth-image" src="/uploads/vw/CW5comps2.jpg">
-<img class="padded-image" src="/uploads/vw/CW5comps3.jpg">
+<video class="paddedVideo" autoplay controls loop muted>
+    <source src="/uploads/vw/checkout.mp4" type="video/mp4">
+</video>
+
 
 {% include components/text-block.html
     title="Many Teams."
