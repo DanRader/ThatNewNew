@@ -89,3 +89,19 @@
          padding: 0 16px;
      }
 }
+
+figure {
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+
+    & video {
+        width: 100%;
+    }
+
+    & figcaption {
+        margin-top: 8px;
+        font-size: 12px;
+        max-width: 690px;
+    }
+}
