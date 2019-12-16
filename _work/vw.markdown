@@ -25,7 +25,7 @@ external-link: "#"
     <video autoplay controls loop muted>
         <source src="/uploads/vw/MogoHome.mp4" type="video/mp4">
     </video>
-  <figcaption>✏️ Our initial solution focused on matching existing inventory with user's ideal car build to create an experience that matched the excitement of going to the dealer </figcaption>
+  <figcaption>✏️ Our initial solution focused on matching existing inventory with user's ideal car build—to create an experience that matched the excitement of going to the dealer. </figcaption>
 </figure>
 
 {% include components/text-block.html
