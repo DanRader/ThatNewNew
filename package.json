@@ -1,28 +1,28 @@
 {
-  "name": "cch",
+  "name": "thatnewnew",
   "version": "1.0.0",
-  "description": "gulp",
+  "description": "Dan Rader's portfolio site",
   "main": "gulpfile.js",
+  "dependencies": {
+    "nvm": "0.0.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-shell": "^0.7.1",
+    "lodash": "^4.17.15"
+  },
   "scripts": {
     "test": "gulp test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MoonlightBureau/CCH.git"
+    "url": "git+https://github.com/DanRader/ThatNewNew.git"
   },
-  "author": "Dan Rader",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MoonlightBureau/CCH/issues"
+    "url": "https://github.com/DanRader/ThatNewNew/issues"
   },
-  "homepage": "https://github.com/MoonlightBureau/CCH#readme",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-shell": "^0.6.5"
-  },
-  "dependencies": {
-    "browser-sync": "^2.23.6",
-    "flickity": "^2.1.1",
-    "gulp-jslint": "^1.0.10"
-  }
+  "homepage": "https://github.com/DanRader/ThatNewNew#readme"
 }

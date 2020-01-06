@@ -4,11 +4,7 @@ var browserSync = require('browser-sync').create();
 
 
 // Task for building blog when something changed:
-gulp.task('build', shell.task(['jekyll serve']));
-// If you don't use bundle:
-// gulp.task('build', shell.task(['jekyll serve']));
-// If you use  Windows Subsystem for Linux (thanks @SamuliAlajarvela):
-// gulp.task('build', shell.task(['bundle exec jekyll serve --force_polling']));
+gulp.task('build', shell.task(['bundle exec jekyll serve']));
 
 // Task for serving blog with Browsersync
 gulp.task('serve', function () {
@@ -17,4 +13,5 @@ gulp.task('serve', function () {
     gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['build', 'serve']);
+// gulp.task('default', ['build', 'serve']);
+gulp.task('default', gulp.parallel('build', 'serve'));
