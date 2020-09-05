@@ -2,20 +2,19 @@
 title: National Aquarium
 position: 92
 layout: work-item
-sub-title: My Brother's Keeper
+sub-title: A feast for the eyes
 desc: "**Resettling in America is an uphill battle.** Sadipscing elitr, sed diam nonumy
   eirmod tempor invidunt ut labore"
 hero-image: "/uploads/ios-banner.jpg"
 client: IRC—International Rescue Commitee
-role: Design, Art Direction, Development
+role: Creative Director
 collaborators:
 - Created at [ISL](https://isl.co/)
-- Fernando Castro // Creative Director
-- Paul Best // UX Design
+- Maggie Chambers // Design
+- Nicole de Vonoge// UX Design
 - Samya Bahari // Product Management
-prime-color: "#BADBC9"
+prime-color: "#b5cae8"
 coming-soon: true
-external-link: "#"
 ---
 
 {% include components/images.html

@@ -53,4 +53,8 @@ $nav-height: 188px;
 .full-width-img {
     width: 100%;
     height: auto;
+
+    & video {
+      width: 100%;
+    }
 }

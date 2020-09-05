@@ -11,6 +11,9 @@ collections:
   work:
     title: Work
     output: true
+  products:
+    title: Products
+    output: true
 email: howdy@danrdesign.com
 description: Dan Rader is a digital creative and designer in Washington DC where he’s
   currently Interactive Art Director at ISL. He blends his passion for design, ux,
@@ -19,7 +22,7 @@ description: Dan Rader is a digital creative and designer in Washington DC where
   humans
 url: https://danrdesign.com
 permalink: pretty
-social-media-image: 
+social-media-image:
 exclude:
 - node_modules
 - gulpfile.js

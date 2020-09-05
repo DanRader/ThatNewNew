@@ -11,7 +11,7 @@ layout: default
 
 <!-- hero header -->
 
-<div class="color-bg"></div>
+<div class="color-bg {% if page.noHeader %}hide{%endif%}"></div>
 <div class="grid">
     <div class="work-hero mb-xxlarge">
         <h1 class="jumbo work-title">{{ page.title }}</h1>
@@ -21,7 +21,12 @@ layout: default
 </div>
 
 <div class="full-width-img mb-xxlarge">
-    <img src="{{ page.hero-image }}" alt="{{ page.title }}-hero">
+    {% if page.hero-image %}
+      <img src="{{ page.hero-image }}" alt="{{ page.title }}-hero">
+    {% endif %}
+    {% if page.hero-video %}
+      <video src="{{ page.hero-video }}" autoplay loop muted></video>
+    {% endif %}
 </div>
 
 <!-- meta info -->
