@@ -1,12 +1,5 @@
 .related-wrap {
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 180px;
-    margin-right: 180px;
-
-    @media screen and (max-width: 1200px){
-        margin-right: $XLARGE;
-        margin-left: $XLARGE;
-    }
 
     @media screen and (max-width: 1000px){
         grid-template-columns: repeat(2, 1fr);

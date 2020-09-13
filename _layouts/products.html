@@ -1,125 +1,98 @@
 ---
 layout: default
 ---
-<script src="https://js.stripe.com/v3/"></script>
 
-<div class="sr-root">
-  <div class="sr-main">
-  <header class="sr-header">
-      <div class="sr-header__logo"></div>
-    </header>
-      <section class="container">
-        <div>
-          <h1>Single photo</h1>
-          <h4>Purchase a Pasha original photo</h4>
-          <div class="pasha-image">
-            <img
-              src="https://picsum.photos/280/320?random=4"
-              width="140"
-              height="160"
-              />
-            </div>
-          </div>
-          <div class="quantity-setter">
-            <button class="increment-btn" id="subtract" disabled>
-              -
-            </button>
-            <input type="number" id="quantity-input" min="1" value="1" />
-            <button class="increment-btn" id="add">+</button>
-          </div>
-          <p class="sr-legal-text">Number of copies (max 10)</p>
+<script
+  src="https://www.paypal.com/sdk/js?client-id={{ site.paypalID }}">
+</script>
 
-          <button id="basic-photo-button">
-            Buy for $<span id="total">5</span>.00
-          </button>
-        </section>
-        <div id="error-message"></div>
-      </div>
+<div class="grid product">
+  <div class="product--image">
+      {% include components/shop--productSlider.html %}
+  </div>
+  <div class="product--details">
+    <a class="backButton" href="/shop">
+      <svg width="20" height="33" viewBox="0 0 20 33" xmlns="http://www.w3.org/2000/svg"><path d="M18.7186 17.08C19.3424 16.4562 19.3424 15.5829 18.8434 14.9591L4.12214 0.487368C3.49836 -0.136414 2.50031 -0.136414 2.00129 0.487368L1.12799 1.36066C0.504211 1.98444 0.504211 2.85774 1.12799 3.48152L13.8531 15.9572L1.12799 28.5575C0.504211 29.1813 0.504211 30.0546 1.12799 30.6784L2.00129 31.5517C2.50031 32.1755 3.49836 32.1755 4.12214 31.5517L18.7186 17.08Z" /></svg
+      <span>Shop</span>
+    </a>
+    <h1 class="">{{ page.title }}</h1>
+    <h3 class="mb-medium">${{ page.price }} • Free Shipping in the US!</h3>
+    {{ content }}
+    {% if page.quantity < 1 %}
+      <figure class="product-list--soldOut">
+        <span>Sold<br>Out</span>
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path d="M64.4,-23.1C71.8,2,58.2,31.7,36.3,47C14.3,62.3,-16.1,63.2,-35.4,49.1C-54.6,35,-62.8,6,-55,-19.6C-47.3,-45.1,-23.6,-67.2,2.4,-67.9C28.5,-68.7,56.9,-48.2,64.4,-23.1Z" transform="translate(100 100)" />
+        </svg>
+      </figure>
+    {% else %}
+      <div class="mt-medium" id="paypal-button-container"></div>
+    {% endif %}
+  </div>
 
-<script src="https://js.stripe.com/v3/"></script>
+</div>
+
+
 <script>
-      // Replace with your own publishable key: https://dashboard.stripe.com/test/apikeys
-      var PUBLISHABLE_KEY = "pk_test_51H7B21CiTERVnOe16EnRTyWdRjpSKoSrypMA1Y7uEYpUuadVnfFzWfVl6o69Ea0ALuRw2tYu8hzFcvAVynhhJdYI00WDz68mXs";
-      // Replace with the domain you want your users to be redirected back to after payment
-      var DOMAIN = window.location.origin;
-      // Replace with a Price for your own product (created either in the Stripe Dashboard or with the API)
-      // You can also supply a SKU or Plan ID for
-      var PRICE_ID = "price_1HEli6CiTERVnOe1577ZEm5h";
+// Flat rate prices
+// Large Flat Rate Box——— 12 x 12 x 5.5———21.10
+// Medium Flat Rate Box———— 11 x 8.5 x 5.5———15.05
 
 
-      var MIN_PHOTOS = 1;
-      var MAX_PHOTOS = 10;
+  const baseOrderAmount = {{page.price}};
+  const shipping = {% if page.height < 11 %}15.05{% elsif page.height > 11 %}21.10{% endif %}
 
-      var stripe = Stripe(PUBLISHABLE_KEY);
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'black',
+          layout: 'horizontal',
+          label: 'checkout',
+          tagline: false
 
-      var basicPhotoButton = document.getElementById("basic-photo-button");
-      document
-        .getElementById("quantity-input")
-        .addEventListener("change", function(evt) {
-          // Ensure customers only buy between 1 and 10 photos
-          if (evt.target.value < MIN_PHOTOS) {
-            evt.target.value = MIN_PHOTOS;
-          }
-          if (evt.target.value > MAX_PHOTOS) {
-            evt.target.value = MAX_PHOTOS;
-          }
-        });
-
-      var updateQuantity = function(evt) {
-        if (evt && evt.type === "keypress" && evt.keyCode !== 13) {
-          return;
+      },
+      onShippingChange: function(data, actions) {
+        // Reject non-US addresses
+        if (data.shipping_address.country_code !== 'US') {
+            return actions.reject();
         }
 
-        var isAdding = evt.target.id === "add";
-        var inputEl = document.getElementById("quantity-input");
-        var currentQuantity = parseInt(inputEl.value);
-
-        document.getElementById("add").disabled = false;
-        document.getElementById("subtract").disabled = false;
-
-        var quantity = isAdding ? currentQuantity + 1 : currentQuantity - 1;
-
-        inputEl.value = quantity;
-        document.getElementById("total").textContent = quantity * 5;
-
-        // Disable the button if the customers hits the max or min
-        if (quantity === MIN_PHOTOS) {
-          document.getElementById("subtract").disabled = true;
-        }
-        if (quantity === MAX_PHOTOS) {
-          document.getElementById("add").disabled = true;
-        }
-      };
-
-      Array.from(document.getElementsByClassName("increment-btn")).forEach(
-        element => {
-          element.addEventListener("click", updateQuantity);
-        }
-      );
-
-      // Handle any errors from Checkout
-      var handleResult = function(result) {
-        if (result.error) {
-          var displayError = document.getElementById("error-message");
-          displayError.textContent = result.error.message;
-        }
-      };
-
-      basicPhotoButton.addEventListener("click", function() {
-        var quantity = parseInt(
-          document.getElementById("quantity-input").value
-        );
-
-        // Make the call to Stripe.js to redirect to the checkout page
-        // with the current quantity
-        stripe
-          .redirectToCheckout({
-            mode: 'payment',
-            lineItems: [{ price: PRICE_ID, quantity: quantity }],
-            successUrl:
-              DOMAIN + "/success.html?session_id={CHECKOUT_SESSION_ID}",
-            cancelUrl: DOMAIN + "/canceled.html"
-          })
-          .then(handleResult);
-      });
-    </script>
+        // Patch the shipping amount
+        const shippingAmount = data.shipping_address.state === 'DC' ? '0.00' : shipping;
+        return actions.order.patch([
+            {
+                op: 'replace',
+                path: '/purchase_units/@reference_id==\'default\'/amount',
+                value: {
+                    currency_code: 'USD',
+                    value: (parseFloat(baseOrderAmount) + parseFloat(shippingAmount)).toFixed(2),
+                    breakdown: {
+                        item_total: {
+                            currency_code: 'USD',
+                            value: baseOrderAmount
+                        },
+                        shipping: {
+                            currency_code: 'USD',
+                            value: shippingAmount
+                        }
+                    }
+                }
+            }
+        ]);
+      },
+      createOrder: function(data, actions) {
+          return actions.order.create({
+              purchase_units: [{
+                  amount: {
+                      value: baseOrderAmount
+                  }
+              }]
+          });
+      },
+      onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+              alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+      }
+  }).render('#paypal-button-container');
+</script>

@@ -1,5 +1,5 @@
 .work-hero {
-    grid-column: 2 / 12;
+    grid-column: 1 / 13;
     justify-self: start;
     justify-content: start;
 
@@ -59,7 +59,7 @@
 
 
 .meta {
-    grid-column: 2 / 6;
+    grid-column: 1 / 6;
     margin-top: $SMALL;
 
     & section {
@@ -72,7 +72,7 @@
 }
 
 .intro {
-    grid-column: 6 / 12;
+    grid-column: 6 / 13;
     justify-content: flex-start;
     color: var(--prime-color);
 

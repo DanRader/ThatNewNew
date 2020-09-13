@@ -111,7 +111,7 @@
      }
 }
 
-figure {
+.figure {
     display: flex;
     flex-flow: column;
     margin: auto;
@@ -130,7 +130,7 @@ figure {
 
 .iframe-wrap {
   padding: 0 180px;
-  
+
   @media #{$media-max-ml}{
       padding: 80px;
   }

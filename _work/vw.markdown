@@ -21,7 +21,7 @@ coming-soon: true
 external-link: "#"
 ---
 
-<figure class="paddedVideo">
+<figure class="figure paddedVideo">
     <video autoplay controls loop muted>
         <source src="/uploads/vw/MogoHome.mp4" type="video/mp4">
     </video>

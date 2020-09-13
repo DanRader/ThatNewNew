@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<style media="screen">
+    body{
+        --prime-color: {{ page.prime-color }}
+    }
+</style>
+
+<!-- hero header -->
+
+<div class="color-bg"></div>
+<div class="grid">
+    <div class="work-hero mb-medium pottery-header">
+        <h1 class="jumbo work-title">{{ page.title }}</h1>
+        <div class="cert-wrap">
+            <img class="cert-circle" src="/uploads/cert.svg" alt="Certified Passion Project">
+            <img class="cert-cactus" src="/uploads/cactus.svg" alt="Certified Passion Project">
+        </div>
+    </div>
+</div>
+
+<div class="grid product-list">
+  {% for product in site.products %}
+    <a href="{{product.url}}" class="product-list--item">
+      {% assign first-image = product.images | first %}
+      {% assign last-image = product.images | last %}
+      {% if product.quantity < 1 %}
+        <figure class="product-list--soldOut">
+          <span>Sold<br>Out</span>
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path d="M64.4,-23.1C71.8,2,58.2,31.7,36.3,47C14.3,62.3,-16.1,63.2,-35.4,49.1C-54.6,35,-62.8,6,-55,-19.6C-47.3,-45.1,-23.6,-67.2,2.4,-67.9C28.5,-68.7,56.9,-48.2,64.4,-23.1Z" transform="translate(100 100)" />
+          </svg>
+        </figure>
+      {% endif %}
+      <div class="product-list--image product-list--hover" style="background-image: url( {{last-image}} )">
+      </div>
+      <div class="product-list--image" style="background-image: url( {{first-image}} )">
+      </div>
+      <h2>{{ product.title }}</h2>
+      <div class="pricing">
+        ${{ product.price }}
+      </div>
+    </a>
+  {% endfor %}
+</div>
