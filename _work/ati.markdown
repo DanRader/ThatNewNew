@@ -1,7 +1,6 @@
 ---
 title: Ancient Truth Investigators
 published: false
-layout: work-item
 sub-title: Rethinking Resettlement.
 desc: "**Resettling in America is an uphill battle.** Sadipscing elitr, sed diam nonumy
   eirmod tempor invidunt ut labore"
@@ -14,6 +13,7 @@ collaborators:
 - Paul Best // UX Design
 - Samya Bahari // Product Management
 prime-color: "#BADBC9"
+layout: work-item
 ---
 
 {% include components/images.html
@@ -67,3 +67,4 @@ prime-color: "#BADBC9"
     img-1="/uploads/sample_6.jpg"
     alt-1="Corger Number One"
 %}
+  
