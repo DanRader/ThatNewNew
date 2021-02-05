@@ -5,6 +5,8 @@ layout: about
 is-menu: true
 ---
 
-Dan Rader is a digital creative in Washington DC where he's currently Associate Creative Director at [ISL](isl.co). He blends his passion for design, ux, and development to translate brands and products into impactful digital experiences. With a background in music, Dan embraces empathy and communication to produce work with teams of talented humans.
+Dan Rader is based in the Washington DC area. He works at the intersection of user and business need and applies his passion for design, systems thinking, and technology to create impactful user experiences.  Dan embraces empathy and communication to guide teams of talented humans to create their best work.
 
-When he’s not designing, he can be found riding his bike, throwing pottery or hanging with his wife [Maggie](https://www.maggiegermano.com) and corgi, [Bruno](https://www.instagram.com/bruno.the.corg/). 
+He is currently Head of Product Design at TSG, Boutique where he brings consistency across brands and teams, all serving the boutique fitness industry. Dan has an agency background—previously with ISL (a Wunderman Thompson company), Deloitte Digital, and Social Driver. Past clients include Volkswagen, Obama Foundation, Capital One, International Rescue Committee, NHL, National Aquarium, Shell/Jiffy Lube, Accion, NIH, and Department of Education.
+
+Dan is a father, husband, and corgi dad. He is a [ceramicist](/pottery/) in his 5-to-9 where he enjoys finding a creative outlet in a physical medium. 

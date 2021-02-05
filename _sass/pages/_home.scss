@@ -25,7 +25,26 @@
 
 .home-content {
     grid-column: 2 / 12;
-    max-width: 723px;
+    max-width: 743px;
+
+    h1 {
+        -webkit-text-stroke: 1px $second-color;
+        text-stroke: 1px $second-color;
+        color: transparent;
+        margin-bottom: $TINY;
+        transform: translateX(-10px);
+        transition: .3s all;
+
+        span {
+            letter-spacing: 1.7px;
+        }
+
+        &:hover {
+            // transform: translateX(4px);
+            color: $second-color;
+            cursor: "👶";
+        }
+    }
 
     & .medium {
         line-height: 1.45;
@@ -47,6 +66,8 @@
 
     & p {
         opacity: .62;
+        line-height: 1.6;
+        font-size: 28px;
     }
 }
 
