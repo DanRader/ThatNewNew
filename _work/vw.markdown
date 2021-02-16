@@ -1,6 +1,6 @@
 ---
 title: Volkswagen
-position: 93
+position: 0
 layout: work-item
 sub-title: Rethinking the car buying process
 desc: "**VW came to us to rethink the car buying process.** We worked to ditch the
@@ -17,8 +17,8 @@ collaborators:
 - Wunderman Thompson // Creative Partners
 - VW Team // Product Owners and UX designers
 prime-color: "#a5bae4"
-coming-soon: true
-external-link: "#"
+coming-soon: false
+external-link: 
 ---
 
 <figure class="paddedVideo">
