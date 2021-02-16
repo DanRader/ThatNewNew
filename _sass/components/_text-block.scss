@@ -7,7 +7,7 @@
     z-index: 1;
 
     & .textBlock-title{
-        grid-column: 2 / 4;
+        grid-column: 1 / 4;
 
         & h2 {
             color: var(--prime-color);
@@ -25,7 +25,7 @@
         }
     }
     & .textBlock-content{
-        grid-column: 4 / 12;
+        grid-column: 4 / 13;
         margin-top: ($TINY / 2);
         @media #{$media-max-m}{
             grid-column: 4 / 13;

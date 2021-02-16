@@ -1,5 +1,69 @@
-{% if include.img-2 %}
-<div class="mb-medium grid grid-twoUp imageWrapper">
+{% if include.img-6 %}
+<div class="mb-medium grid grid-three imageWrapper {%if include.shorter %}shorter{% endif %}">
+    <div class="">
+        <img src="{{ include.img-1 }}"
+        alt="{{ include.alt-1 }}">
+    </div>
+    <div class="">
+        <img src="{{ include.img-2 }}"
+        alt="{{ include.alt-2 }}">
+    </div>
+    <div class="">
+        <img src="{{ include.img-3 }}"
+        alt="{{ include.alt-3 }}">
+    </div>
+    <div class="">
+        <img src="{{ include.img-4 }}"
+        alt="{{ include.alt-4 }}">
+    </div>
+    <div class="">
+        <img src="{{ include.img-5 }}"
+        alt="{{ include.alt-5 }}">
+    </div>
+    <div class="">
+        <img src="{{ include.img-6 }}"
+        alt="{{ include.alt-6 }}">
+    </div>
+</div>
+
+{% elsif include.img-4 %}
+<div class="mb-medium grid grid-two imageWrapper {%if include.shorter %}shorter{% endif %}">
+    <div class="">
+        <img src="{{ include.img-1 }}"
+        alt="{{ include.alt-1 }}">
+    </div>
+    <div class="">
+        <img src="{{ include.img-2 }}"
+        alt="{{ include.alt-2 }}">
+    </div>
+    <div class="">
+        <img src="{{ include.img-3 }}"
+        alt="{{ include.alt-3 }}">
+    </div>
+    <div class="">
+        <img src="{{ include.img-4 }}"
+        alt="{{ include.alt-4 }}">
+    </div>
+</div>
+
+{% elsif include.img-3 %}
+<div class="mb-medium grid grid-three imageWrapper {%if include.shorter %}shorter{% endif %}">
+    <div class="">
+        <img src="{{ include.img-1 }}"
+        alt="{{ include.alt-1 }}">
+    </div>
+    <div class="">
+        <img src="{{ include.img-2 }}"
+        alt="{{ include.alt-2 }}">
+    </div>
+    <div class="">
+        <img src="{{ include.img-3 }}"
+        alt="{{ include.alt-3 }}">
+    </div>
+</div>
+
+{% elsif include.img-2 %}
+<div class="mb-medium grid grid-two imageWrapper {%if include.shorter %}shorter{% endif %}">
     <div class="">
         <img src="{{ include.img-1 }}"
         {% if include.position-1 %}
@@ -16,9 +80,11 @@
     </div>
 </div>
 
+
+
 {% else %}
 
-<div class="mb-medium grid grid-oneUp imageWrapper">
+<div class="mb-medium grid grid-one imageWrapper">
     <div class="">
         <img src="{{ include.img-1 }}"
         {% if include.position %}

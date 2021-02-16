@@ -5,16 +5,16 @@
     width: 100%;
     left: 0;
     height: $nav-height;
-    z-index: 6;
+    z-index: 999999;
 
-    @media #{$media-max-s}{
+    @media #{$media-max-m}{
         // FLAG
              height: calc(#{$nav-height} / 2);
     }
 }
 
 .grid .nav-inside-wrapper {
-    grid-column: 2 / 12;
+    grid-column: 1 / 13;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -54,7 +54,7 @@ nav {
           }
       }
 
-       @media #{$media-max-s}{
+       @media #{$media-max-m}{
            height: 5rem;
            margin: 0 6%;
 

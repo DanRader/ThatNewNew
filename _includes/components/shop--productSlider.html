@@ -1,0 +1,50 @@
+<div class="flex flex-column">
+    <div class="product-slider">
+        {% for image in page.images %}
+          <div class="product-slider_image cover" style="background-image: url('{{ image }}');">
+          </div>
+          {% endfor %}
+    </div>
+</div>
+  <!-- <div class="product-slider_nav">
+      {% for image in page.images %}
+          <div class="flex-1 relative">
+                <div class="product-slider_navImage cover" style="background-image: url('{{ image }}');">
+                </div>
+          </div>
+        {% endfor %}
+  </div> -->
+
+
+
+
+
+<script
+  src="/assets/js/slick.min.js">
+</script>
+
+<script type="text/javascript">
+          $(document).ready(function(){
+              $('.product-slider').slick({
+               slidesToShow: 1,
+               slidesToScroll: 1,
+               arrows: true,
+               fade: false,
+               waitForAnimate: false,
+               prevArrow: '<button type="button" class="slick-arrow slick-prev"><svg width="20" height="33" viewBox="0 0 20 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.7186 17.08C19.3424 16.4562 19.3424 15.5829 18.8434 14.9591L4.12214 0.487368C3.49836 -0.136414 2.50031 -0.136414 2.00129 0.487368L1.12799 1.36066C0.504211 1.98444 0.504211 2.85774 1.12799 3.48152L13.8531 15.9572L1.12799 28.5575C0.504211 29.1813 0.504211 30.0546 1.12799 30.6784L2.00129 31.5517C2.50031 32.1755 3.49836 32.1755 4.12214 31.5517L18.7186 17.08Z" fill="black"/></svg></button>',
+               nextArrow: '<button type="button" class="slick-arrow slick-next"><svg width="20" height="33" viewBox="0 0 20 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.7186 17.08C19.3424 16.4562 19.3424 15.5829 18.8434 14.9591L4.12214 0.487368C3.49836 -0.136414 2.50031 -0.136414 2.00129 0.487368L1.12799 1.36066C0.504211 1.98444 0.504211 2.85774 1.12799 3.48152L13.8531 15.9572L1.12799 28.5575C0.504211 29.1813 0.504211 30.0546 1.12799 30.6784L2.00129 31.5517C2.50031 32.1755 3.49836 32.1755 4.12214 31.5517L18.7186 17.08Z" fill="black"/></svg></button>',
+
+             });
+
+             // $('.product-slider_nav').slick({
+             //   slidesToShow: 5,
+             //   slidesToScroll: 1,
+             //   asNavFor: '.product-slider',
+             //   dots: false,
+             //   centerMode: false,
+             //   focusOnSelect: true,
+             //   vertical: false,
+             //   draggable: false
+             // });
+        });
+</script>

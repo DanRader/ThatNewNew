@@ -1,0 +1,98 @@
+---
+layout: default
+---
+
+<script
+  src="https://www.paypal.com/sdk/js?client-id={{ site.paypalID }}">
+</script>
+
+<div class="grid product">
+  <div class="product--image">
+      {% include components/shop--productSlider.html %}
+  </div>
+  <div class="product--details">
+    <a class="backButton" href="/shop">
+      <svg width="20" height="33" viewBox="0 0 20 33" xmlns="http://www.w3.org/2000/svg"><path d="M18.7186 17.08C19.3424 16.4562 19.3424 15.5829 18.8434 14.9591L4.12214 0.487368C3.49836 -0.136414 2.50031 -0.136414 2.00129 0.487368L1.12799 1.36066C0.504211 1.98444 0.504211 2.85774 1.12799 3.48152L13.8531 15.9572L1.12799 28.5575C0.504211 29.1813 0.504211 30.0546 1.12799 30.6784L2.00129 31.5517C2.50031 32.1755 3.49836 32.1755 4.12214 31.5517L18.7186 17.08Z" /></svg
+      <span>Shop</span>
+    </a>
+    <h1 class="">{{ page.title }}</h1>
+    <h3 class="mb-medium">${{ page.price }} • Free Shipping in the US!</h3>
+    {{ content }}
+    {% if page.quantity < 1 %}
+      <figure class="product-list--soldOut">
+        <span>Sold<br>Out</span>
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path d="M64.4,-23.1C71.8,2,58.2,31.7,36.3,47C14.3,62.3,-16.1,63.2,-35.4,49.1C-54.6,35,-62.8,6,-55,-19.6C-47.3,-45.1,-23.6,-67.2,2.4,-67.9C28.5,-68.7,56.9,-48.2,64.4,-23.1Z" transform="translate(100 100)" />
+        </svg>
+      </figure>
+    {% else %}
+      <div class="mt-medium" id="paypal-button-container"></div>
+    {% endif %}
+  </div>
+
+</div>
+
+
+<script>
+// Flat rate prices
+// Large Flat Rate Box——— 12 x 12 x 5.5———21.10
+// Medium Flat Rate Box———— 11 x 8.5 x 5.5———15.05
+
+
+  const baseOrderAmount = {{page.price}};
+  const shipping = {% if page.height < 11 %}15.05{% elsif page.height > 11 %}21.10{% endif %}
+
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'black',
+          layout: 'horizontal',
+          label: 'checkout',
+          tagline: false
+
+      },
+      onShippingChange: function(data, actions) {
+        // Reject non-US addresses
+        if (data.shipping_address.country_code !== 'US') {
+            return actions.reject();
+        }
+
+        // Patch the shipping amount
+        const shippingAmount = data.shipping_address.state === 'DC' ? '0.00' : shipping;
+        return actions.order.patch([
+            {
+                op: 'replace',
+                path: '/purchase_units/@reference_id==\'default\'/amount',
+                value: {
+                    currency_code: 'USD',
+                    value: (parseFloat(baseOrderAmount) + parseFloat(shippingAmount)).toFixed(2),
+                    breakdown: {
+                        item_total: {
+                            currency_code: 'USD',
+                            value: baseOrderAmount
+                        },
+                        shipping: {
+                            currency_code: 'USD',
+                            value: shippingAmount
+                        }
+                    }
+                }
+            }
+        ]);
+      },
+      createOrder: function(data, actions) {
+          return actions.order.create({
+              purchase_units: [{
+                  amount: {
+                      value: baseOrderAmount
+                  }
+              }]
+          });
+      },
+      onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+              alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+      }
+  }).render('#paypal-button-container');
+</script>

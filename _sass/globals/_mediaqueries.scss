@@ -1,10 +1,12 @@
-
-$l: 1400px;
-$m: 52em;
-$s: 32em;
+$xl: 1600px;
+$l: 1401px;
+$ml: 1200px;
+$m: 832px;
+$s: 512px;
 
 $media-min-xl: "screen and (min-width: #{$l})";
 $media-max-l: "screen and (max-width: #{$l})";
+$media-max-ml: "screen and (max-width: #{$ml})";
 $media-max-m: "screen and (max-width: #{$m})";
 $media-min-s: "screen and (min-width: #{$s})";
 $media-max-s: "screen and (max-width: #{$s})";

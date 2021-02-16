@@ -30,17 +30,38 @@
     }
 }
 
-.grid-twoUp {
-    grid-template-columns: repeat(2, 1fr);
+.shorter {
+  & div {
+      height: 66vh;
+  }
+}
+
+.grid {
+  &-one {
+      grid-template-columns: repeat(1, 1fr);
+  }
+  &-two {
+      grid-template-columns: repeat(2, 1fr);
+
+      @media #{$media-max-m}{
+          grid-template-columns: repeat(1, 1fr);
+      }
+  }
+  &-three {
+    grid-template-columns: repeat(3, 1fr);
+
+    @media #{$media-max-ml}{
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     @media #{$media-max-m}{
         grid-template-columns: repeat(1, 1fr);
     }
+  }
+  &-five {
+  }
 }
 
-.grid-oneUp {
-    grid-template-columns: repeat(1, 1fr);
-}
 
 // .work-contentWrap {
 //     //  THIS IS A BANDADE FIX
@@ -90,7 +111,7 @@
      }
 }
 
-figure {
+.figure {
     display: flex;
     flex-flow: column;
     margin: auto;
@@ -99,10 +120,31 @@ figure {
         width: 100%;
     }
 
- 
+
     & figcaption {
         margin-top: 8px;
         font-size: 12px;
         max-width: 690px;
     }
+}
+
+.iframe-wrap {
+  padding: 0 180px;
+
+  @media #{$media-max-ml}{
+      padding: 80px;
+  }
+
+  @media #{$media-max-m}{
+      padding: 24px;
+  }
+  @media #{$media-max-s}{
+      padding: 0px;
+  }
+
+  & iframe {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+  }
 }

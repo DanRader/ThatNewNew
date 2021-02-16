@@ -1,13 +1,5 @@
 $tablet: 600px;
-$xl: 1400px;
-$l: 771px;
-
 $media-max-tablet: "screen and (max-width: #{$s})";
-$media-max-l: "screen and (max-width: #{$l})";
-$media-min-xl: "screen and (min-width: #{$xl})";
-// @media #{$media-max-s}{}
-// @media #{$media-max-l}{}
-// @media #{$media-min-xl}{}
 
 * {
     box-sizing: border-box;
