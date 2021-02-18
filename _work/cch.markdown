@@ -17,7 +17,6 @@ prime-color: "#F0D6C5"
 external-link: https://capitolciderhouse.com/
 ---
 
-
 {% include components/images.html
     img-1="/uploads/sample_2.jpg"
     alt-1="Corger Number One"

@@ -1,7 +1,7 @@
 ---
-layout: products
 title: Testing Testing
-price: "80.00"
+layout: products
+price: '80.00'
 images:
 - "/uploads/pottery4-1.jpg"
 - "/uploads/pottery4-2.jpg"

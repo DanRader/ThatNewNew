@@ -3,7 +3,10 @@ title: Contrary Con
 position: 2
 layout: work-item
 sub-title: Dive Off the Dimensional Deep End.
-desc: "**An annual <strike>(anti)</strike>conference with one goal:** expose the DC creative community to new ideas and perspectives. This one-day series of speakers and workshops, explores a world beyond ones and zeroes, challenging participants to see the world through a different lens."
+desc: "**An annual <strike>(anti)</strike>conference with one goal:** expose the DC
+  creative community to new ideas and perspectives. This one-day series of speakers
+  and workshops, explores a world beyond ones and zeroes, challenging participants
+  to see the world through a different lens."
 hero-video: "/uploads/contrarycon/ezgif-6-9f07cb3ba5bd.mp4"
 client: The DC Tech & Design Community
 role: Creative Director
