@@ -1,10 +1,9 @@
 ---
 title: Contrary Con
-position: 6
+position: 2
 layout: work-item
 sub-title: Dive Off the Dimensional Deep End.
-desc: "**Resettling in America is an uphill battle.** Sadipscing elitr, sed diam nonumy
-  eirmod tempor invidunt ut labore"
+desc: "**An annual <strike>(anti)</strike>conference with one goal:** expose the DC creative community to new ideas and perspectives. This one-day series of speakers and workshops, explores a world beyond ones and zeroes, challenging participants to see the world through a different lens."
 hero-video: "/uploads/contrarycon/ezgif-6-9f07cb3ba5bd.mp4"
 client: The DC Tech & Design Community
 role: Creative Director
@@ -13,8 +12,7 @@ collaborators:
 - Maggie Chambers & Haeun Ro // Design
 - Marissa Halpert // Development
 - Nathan Colby & Peter Broomfield // Motion Design
-prime-color: "#c9cbe2"
-external-link: https://contrarycon.com/
+prime-color: "#b0b5dd"
 noHeader: true
 ---
 
@@ -37,7 +35,7 @@ noHeader: true
 {% include components/text-block.html
     title="An award "
     sub-title="winning website"
-    content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    content="The website invites the user to interact with a world of shifting perspectives. From playful typographic treatments to mouse-tracked motion, this single-page scroller supplies new experiences in every view. This is counter-balanced with an austere aesthetic that gives it a punchy feeling. Our website received accolades from cssdesignawards.com and csswinner.com and was a featured site on Muz.li."
 %}
 
 <video class="inlineVideo" autoplay loop muted>
@@ -47,8 +45,9 @@ noHeader: true
 <img class="fullWidth-image" src="/uploads/contrarycon/CC-web2.jpg">
 
 {% include components/text-block.html
-    title="Motion Graphics"
-    content="A key part of the contrary con brand was movement and type. consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    title="Typography" 
+    sub-title="in motion"
+    content="A key part of the contrary con brand was movement and type. We used these moments of motion to serve as the bedrock for the visual identity."
 %}
 
 <div class="iframe-wrap">
@@ -67,10 +66,8 @@ noHeader: true
 
 <!-- insert speaker announce video—————— -->
 
-
-{% include components/text-block.html
-    title="Immersive branded experience"
-    content="From social graphics, to...consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua  "
+{% include components/big-statement.html
+    statement="We were able to bring something truely special together. From amazing speakers to kick ass creative, the event proved to be a showcase of what the DC creative community has to offer."
 %}
 
 <img class="fullWidth-image" src="/uploads/contrarycon/social.jpg">
@@ -85,9 +82,7 @@ noHeader: true
     shorter="true"
 %}
 
-{% include components/big-statement.html
-    statement="It's a wrap"
-%}
+
 
 <div class="iframe-wrap">
   <iframe src="https://player.vimeo.com/video/330486027?app_id=122963&amp;wmode=opaque"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" title="CCIV Animation v4 2k" id="yui_3_17_2_1_1597497254173_115"></iframe>

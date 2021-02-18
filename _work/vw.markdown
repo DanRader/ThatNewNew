@@ -8,7 +8,7 @@ desc: "**VW came to us to rethink the car buying process.** We worked to ditch t
   it was applied to accompany the launch of VW's new fully electric vehicles."
 hero-image: "/uploads/vw/hero.jpg"
 client: Volkswagon
-role: Creative Direction, Design, Product Direction
+role: Creative Direction, Product Direction
 collaborators:
 - Created at [ISL](https://isl.co/)
 - Maggie Chambers // Design
